@@ -15,7 +15,7 @@ const Header = () => {
       <div className="bg-primary text-white py-2">
         <div className="container mx-auto px-2 md:px-4">
           <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-2 text-sm">
-            <div className="flex items-center gap-2 lg:gap-4">
+            <div className="flex flex-col sm:flex-row items-center gap-2 lg:gap-4">
               <div className="flex items-center gap-1 lg:gap-2">
                 <Clock className="h-4 w-4" />
                 <span className="text-xs lg:text-sm">7/24 Acil Servis</span>
@@ -24,8 +24,14 @@ const Header = () => {
                 <MapPin className="h-4 w-4" />
                 <span className="text-xs lg:text-sm">Kocaeli Geneli Hizmet</span>
               </div>
+              <div className="flex sm:hidden lg:hidden items-center gap-2 font-medium">
+                <Phone className="h-4 w-4" />
+                <a href="tel:05321234567" className="hover:text-accent transition-colors text-xs lg:text-sm">
+                  0532 123 45 67
+                </a>
+              </div>
             </div>
-            <div className="flex items-center gap-2 font-medium">
+            <div className="hidden sm:flex lg:flex items-center gap-2 font-medium">
               <Phone className="h-4 w-4" />
               <a href="tel:05321234567" className="hover:text-accent transition-colors text-xs lg:text-sm">
                 0532 123 45 67

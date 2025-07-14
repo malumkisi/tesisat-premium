@@ -13,7 +13,7 @@ const PetekTemizligi = () => {
       
       {/* Back Button */}
       <div className="pt-20 md:pt-4 bg-primary">
-        <div className="container mx-auto px-4 py-4">
+        <div className="container mx-auto px-4 py-1">
           <Button
             variant="outline"
             onClick={() => window.location.href = '/#hizmetler'}
