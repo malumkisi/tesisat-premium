@@ -141,12 +141,11 @@ All colors MUST be HSL.
     border: 1px solid rgba(255, 255, 255, 0.3) !important;
   }
 
-  /* Quick message form mobile fixes */
+  /* Quick message form mobile fixes - keep on right side */
   .fixed.bottom-4.right-4 {
     bottom: 1rem !important;
     right: 1rem !important;
-    left: 1rem !important;
-    width: auto !important;
+    max-width: calc(100vw - 2rem) !important;
   }
 
   /* Service navigation fixes */
@@ -167,6 +166,17 @@ All colors MUST be HSL.
 @media (min-width: 769px) and (max-width: 1024px) {
   .lg\:grid-cols-3, .lg\:grid-cols-4 {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+  
+  /* Prevent horizontal scrolling on tablets */
+  body {
+    overflow-x: hidden !important;
+  }
+  
+  .container {
+    max-width: 100% !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
   }
 }
 
@@ -205,5 +215,6 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden;
   }
 }

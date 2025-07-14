@@ -39,7 +39,7 @@ Mesaj: ${formData.message || "Tesisat konusunda bilgi almak istiyorum."}`;
 
   if (isMinimized) {
     return (
-      <div className="fixed bottom-4 right-4 z-50">
+      <div className="fixed bottom-4 right-4 z-50 md:right-4 md:bottom-4">
         <div className="relative">
           <Button
             onClick={() => setIsMinimized(false)}
@@ -47,9 +47,9 @@ Mesaj: ${formData.message || "Tesisat konusunda bilgi almak istiyorum."}`;
           >
             <MessageCircle className="h-6 w-6" />
           </Button>
-          <div className="absolute -top-12 -left-8 bg-blue-600 text-white px-3 py-1 rounded-lg text-sm whitespace-nowrap">
+          <div className="absolute -top-12 -right-2 md:-left-8 bg-blue-600 text-white px-3 py-1 rounded-lg text-sm whitespace-nowrap max-w-[180px] md:max-w-none">
             Bir sorunuz mu var?
-            <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-blue-600"></div>
+            <div className="absolute top-full right-4 md:left-1/2 md:right-auto transform md:-translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-blue-600"></div>
           </div>
         </div>
       </div>
@@ -57,24 +57,24 @@ Mesaj: ${formData.message || "Tesisat konusunda bilgi almak istiyorum."}`;
   }
 
   return (
-    <div className="fixed bottom-4 right-4 z-50">
-      <div className="bg-white rounded-lg shadow-2xl border w-80 max-w-[calc(100vw-2rem)] animate-slide-in-right">
+    <div className="fixed bottom-4 right-4 z-50 max-w-[calc(100vw-2rem)] md:max-w-none">
+      <div className="bg-white rounded-lg shadow-2xl border w-80 max-w-full animate-slide-in-right">
         {/* Header */}
         <div className="bg-blue-600 text-white p-4 rounded-t-lg flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
               <MessageCircle className="h-5 w-5" />
             </div>
-            <div>
-              <h3 className="font-semibold">Bir sorunuz mu var?</h3>
-              <p className="text-xs opacity-90">Aşağıdaki formu doldurun, temsilcimiz hemen dönüş yapsın.</p>
+            <div className="flex-1 min-w-0">
+              <h3 className="font-semibold text-sm">Bir sorunuz mu var?</h3>
+              <p className="text-xs opacity-90 break-words">Aşağıdaki formu doldurun, temsilcimiz hemen dönüş yapsın.</p>
             </div>
           </div>
           <Button
             variant="ghost"
             size="sm"
             onClick={() => setIsMinimized(true)}
-            className="text-white hover:bg-blue-700 p-1"
+            className="text-white hover:bg-blue-700 p-1 flex-shrink-0"
           >
             <X className="h-4 w-4" />
           </Button>
