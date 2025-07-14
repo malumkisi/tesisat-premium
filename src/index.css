@@ -141,11 +141,10 @@ All colors MUST be HSL.
     border: 1px solid rgba(255, 255, 255, 0.3) !important;
   }
 
-  /* Quick message form mobile fixes - keep on right side */
-  .fixed.bottom-4.right-4 {
-    bottom: 1rem !important;
-    right: 1rem !important;
-    max-width: calc(100vw - 2rem) !important;
+  /* Quick message mobile positioning */
+  .fixed.bottom-6.right-6 {
+    bottom: 1.5rem !important;
+    right: 1.5rem !important;
   }
 
   /* Service navigation fixes */
