@@ -12,8 +12,8 @@ const KombiServisi = () => {
       <MobileHeader />
       
       {/* Back Button */}
-      <div className="pt-20 md:pt-4 pb-4 bg-gray-50">
-        <div className="container mx-auto px-4">
+      <div className="pt-20 md:pt-4 bg-primary">
+        <div className="container mx-auto px-4 py-4">
           <Button
             variant="outline"
             onClick={() => window.location.href = '/#hizmetler'}
@@ -41,11 +41,11 @@ const KombiServisi = () => {
             </p>
             <Button 
               size="lg" 
-              className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-lg px-8 py-4 rounded-full"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-lg px-6 sm:px-8 py-4 rounded-full w-full sm:w-auto"
               onClick={() => window.open('tel:05321234567')}
             >
               <Phone className="mr-2 h-5 w-5" />
-              Hemen Arayın: 0532 123 45 67
+              <span className="text-center">Hemen Arayın: 0532 123 45 67</span>
             </Button>
           </div>
         </div>

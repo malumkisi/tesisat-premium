@@ -12,8 +12,8 @@ const AcilMudahale = () => {
       <MobileHeader />
       
       {/* Back Button */}
-      <div className="pt-20 md:pt-4 pb-4 bg-gray-50">
-        <div className="container mx-auto px-4">
+      <div className="pt-20 md:pt-4 bg-red-600">
+        <div className="container mx-auto px-4 py-4">
           <Button
             variant="outline"
             onClick={() => window.location.href = '/#hizmetler'}
@@ -42,16 +42,16 @@ const AcilMudahale = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg" 
-                className="bg-white text-red-600 hover:bg-gray-100 font-bold text-lg px-8 py-4 rounded-full"
+                className="bg-white text-red-600 hover:bg-gray-100 font-bold text-lg px-6 sm:px-8 py-4 rounded-full w-full sm:w-auto"
                 onClick={() => window.open('tel:05321234567')}
               >
                 <Phone className="mr-2 h-5 w-5" />
-                ACİL ARAMA: 0532 123 45 67
+                <span className="text-center">ACİL ARAMA: 0532 123 45 67</span>
               </Button>
               <Button 
                 size="lg" 
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-red-600 font-bold text-lg px-8 py-4 rounded-full"
+                className="border-white text-white hover:bg-white hover:text-red-600 font-bold text-lg px-6 sm:px-8 py-4 rounded-full w-full sm:w-auto"
                 onClick={() => window.open('https://wa.me/905321234567')}
               >
                 WhatsApp Acil Mesaj
