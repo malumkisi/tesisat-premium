@@ -12,9 +12,10 @@ const BlogPost4 = () => {
       
       {/* Back Button - Responsive for all screens */}
       <div className="pt-16 md:pt-4 bg-white sticky top-0 z-40 shadow-sm">
-        <div className="container mx-auto px-4 py-3">
+        <div className="container mx-auto px-4 py-2">
           <Button
             variant="outline"
+            size="sm"
             className="text-primary border-primary hover:bg-primary hover:text-white"
             onClick={() => window.history.back()}
           >
@@ -30,7 +31,7 @@ const BlogPost4 = () => {
           {/* Featured Image */}
           <div className="mb-6">
             <img 
-              src="https://images.unsplash.com/photo-1558623143-ca2c4f95c9b6?w=800&h=400&fit=crop"
+              src="/src/assets/kombi-bakimi-blog.jpg"
               alt="Kombi bakımı"
               className="w-full h-56 object-cover rounded-lg shadow-lg"
             />

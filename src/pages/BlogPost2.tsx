@@ -309,9 +309,10 @@ const BlogPost2 = () => {
       
       {/* Back Button - Responsive for all screens */}
       <div className="pt-16 md:pt-4 bg-white sticky top-0 z-40 shadow-sm">
-        <div className="container mx-auto px-4 py-3">
+        <div className="container mx-auto px-4 py-2">
           <Button
             variant="outline"
+            size="sm"
             className="text-primary border-primary hover:bg-primary hover:text-white"
             onClick={() => window.history.back()}
           >

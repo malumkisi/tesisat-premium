@@ -86,28 +86,60 @@ const Header = () => {
                 </button>
                 <div className="absolute top-full left-0 mt-2 w-56 lg:w-64 bg-white shadow-lg border rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                   <div className="p-2">
-                    <a href="/su-kacagi-tespiti" className="flex items-center px-3 lg:px-4 py-2 lg:py-3 text-gray-700 hover:bg-gray-50 hover:text-primary rounded-lg transition-colors text-sm">
+                    <a href="/su-kacagi-tespiti" className={`flex items-center px-3 lg:px-4 py-2 lg:py-3 rounded-lg transition-colors text-sm relative ${
+                      window.location.pathname === '/su-kacagi-tespiti' 
+                        ? 'text-primary bg-primary/10 after:absolute after:right-2 after:top-1/2 after:-translate-y-1/2 after:w-1 after:h-4 after:bg-primary after:rounded-full' 
+                        : 'text-gray-700 hover:bg-gray-50 hover:text-primary'
+                    }`}>
                       Su Kaçağı Tespiti
                     </a>
-                    <a href="/tikaniklik-acma" className="flex items-center px-3 lg:px-4 py-2 lg:py-3 text-gray-700 hover:bg-gray-50 hover:text-primary rounded-lg transition-colors text-sm">
+                    <a href="/tikaniklik-acma" className={`flex items-center px-3 lg:px-4 py-2 lg:py-3 rounded-lg transition-colors text-sm relative ${
+                      window.location.pathname === '/tikaniklik-acma' 
+                        ? 'text-primary bg-primary/10 after:absolute after:right-2 after:top-1/2 after:-translate-y-1/2 after:w-1 after:h-4 after:bg-primary after:rounded-full' 
+                        : 'text-gray-700 hover:bg-gray-50 hover:text-primary'
+                    }`}>
                       Tıkanıklık Açma
                     </a>
-                    <a href="/petek-temizligi" className="flex items-center px-3 lg:px-4 py-2 lg:py-3 text-gray-700 hover:bg-gray-50 hover:text-primary rounded-lg transition-colors text-sm">
+                    <a href="/petek-temizligi" className={`flex items-center px-3 lg:px-4 py-2 lg:py-3 rounded-lg transition-colors text-sm relative ${
+                      window.location.pathname === '/petek-temizligi' 
+                        ? 'text-primary bg-primary/10 after:absolute after:right-2 after:top-1/2 after:-translate-y-1/2 after:w-1 after:h-4 after:bg-primary after:rounded-full' 
+                        : 'text-gray-700 hover:bg-gray-50 hover:text-primary'
+                    }`}>
                       Petek Temizliği
                     </a>
-                    <a href="/musluk-tamiri" className="flex items-center px-3 lg:px-4 py-2 lg:py-3 text-gray-700 hover:bg-gray-50 hover:text-primary rounded-lg transition-colors text-sm">
+                    <a href="/musluk-tamiri" className={`flex items-center px-3 lg:px-4 py-2 lg:py-3 rounded-lg transition-colors text-sm relative ${
+                      window.location.pathname === '/musluk-tamiri' 
+                        ? 'text-primary bg-primary/10 after:absolute after:right-2 after:top-1/2 after:-translate-y-1/2 after:w-1 after:h-4 after:bg-primary after:rounded-full' 
+                        : 'text-gray-700 hover:bg-gray-50 hover:text-primary'
+                    }`}>
                       Musluk Tamiri
                     </a>
-                    <a href="/klozet-tamiri" className="flex items-center px-3 lg:px-4 py-2 lg:py-3 text-gray-700 hover:bg-gray-50 hover:text-primary rounded-lg transition-colors text-sm">
+                    <a href="/klozet-tamiri" className={`flex items-center px-3 lg:px-4 py-2 lg:py-3 rounded-lg transition-colors text-sm relative ${
+                      window.location.pathname === '/klozet-tamiri' 
+                        ? 'text-primary bg-primary/10 after:absolute after:right-2 after:top-1/2 after:-translate-y-1/2 after:w-1 after:h-4 after:bg-primary after:rounded-full' 
+                        : 'text-gray-700 hover:bg-gray-50 hover:text-primary'
+                    }`}>
                       Klozet Tamiri
                     </a>
-                    <a href="/batarya-degisimi" className="flex items-center px-3 lg:px-4 py-2 lg:py-3 text-gray-700 hover:bg-gray-50 hover:text-primary rounded-lg transition-colors text-sm">
+                    <a href="/batarya-degisimi" className={`flex items-center px-3 lg:px-4 py-2 lg:py-3 rounded-lg transition-colors text-sm relative ${
+                      window.location.pathname === '/batarya-degisimi' 
+                        ? 'text-primary bg-primary/10 after:absolute after:right-2 after:top-1/2 after:-translate-y-1/2 after:w-1 after:h-4 after:bg-primary after:rounded-full' 
+                        : 'text-gray-700 hover:bg-gray-50 hover:text-primary'
+                    }`}>
                       Batarya Değişimi
                     </a>
-                    <a href="/kombi-servisi" className="flex items-center px-3 lg:px-4 py-2 lg:py-3 text-gray-700 hover:bg-gray-50 hover:text-primary rounded-lg transition-colors text-sm">
+                    <a href="/kombi-servisi" className={`flex items-center px-3 lg:px-4 py-2 lg:py-3 rounded-lg transition-colors text-sm relative ${
+                      window.location.pathname === '/kombi-servisi' 
+                        ? 'text-primary bg-primary/10 after:absolute after:right-2 after:top-1/2 after:-translate-y-1/2 after:w-1 after:h-4 after:bg-primary after:rounded-full' 
+                        : 'text-gray-700 hover:bg-gray-50 hover:text-primary'
+                    }`}>
                       Kombi Servisi
                     </a>
-                    <a href="/acil-mudahale" className="flex items-center px-3 lg:px-4 py-2 lg:py-3 text-gray-700 hover:bg-gray-50 hover:text-primary rounded-lg transition-colors text-sm">
+                    <a href="/acil-mudahale" className={`flex items-center px-3 lg:px-4 py-2 lg:py-3 rounded-lg transition-colors text-sm relative ${
+                      window.location.pathname === '/acil-mudahale' 
+                        ? 'text-primary bg-primary/10 after:absolute after:right-2 after:top-1/2 after:-translate-y-1/2 after:w-1 after:h-4 after:bg-primary after:rounded-full' 
+                        : 'text-gray-700 hover:bg-gray-50 hover:text-primary'
+                    }`}>
                       Acil Müdahale
                     </a>
                   </div>

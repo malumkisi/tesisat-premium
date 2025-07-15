@@ -17,7 +17,7 @@ const BlogPost = () => {
       date: "15 Ocak 2025",
       author: "Kocaeli Uzman Tesisatçı",
       readTime: "3 dk okuma",
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=400&fit=crop",
+      image: "/src/assets/su-kacagi-blog.jpg",
       content: `
         <div class="prose max-w-none">
           <p class="lead">Su kaçağı belirtilerini erken fark ederek büyük hasarları önleyebilirsiniz. İşte dikkat etmeniz gereken 5 önemli işaret ve bu durumlarla karşılaştığınızda ne yapmanız gerektiği hakkında detaylı bilgiler...</p>

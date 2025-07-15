@@ -75,14 +75,46 @@ const MobileHeader = () => {
               <div className="border-l-2 border-primary pl-4">
                 <p className="text-sm font-medium text-primary mb-2">Hizmetlerimiz</p>
                 <div className="flex flex-col gap-2 text-sm">
-                  <a href="/su-kacagi-tespiti" className="text-gray-600 hover:text-primary transition-colors" onClick={() => setIsMenuOpen(false)}>Su Kaçağı Tespiti</a>
-                  <a href="/tikaniklik-acma" className="text-gray-600 hover:text-primary transition-colors" onClick={() => setIsMenuOpen(false)}>Tıkanıklık Açma</a>
-                  <a href="/petek-temizligi" className="text-gray-600 hover:text-primary transition-colors" onClick={() => setIsMenuOpen(false)}>Petek Temizliği</a>
-                  <a href="/musluk-tamiri" className="text-gray-600 hover:text-primary transition-colors" onClick={() => setIsMenuOpen(false)}>Musluk Tamiri</a>
-                  <a href="/klozet-tamiri" className="text-gray-600 hover:text-primary transition-colors" onClick={() => setIsMenuOpen(false)}>Klozet Tamiri</a>
-                  <a href="/batarya-degisimi" className="text-gray-600 hover:text-primary transition-colors" onClick={() => setIsMenuOpen(false)}>Batarya Değişimi</a>
-                  <a href="/kombi-servisi" className="text-gray-600 hover:text-primary transition-colors" onClick={() => setIsMenuOpen(false)}>Kombi Servisi</a>
-                  <a href="/acil-mudahale" className="text-gray-600 hover:text-primary transition-colors" onClick={() => setIsMenuOpen(false)}>Acil Müdahale</a>
+                  <a href="/su-kacagi-tespiti" className={`transition-colors relative ${
+                    window.location.pathname === '/su-kacagi-tespiti' 
+                      ? 'text-primary after:absolute after:bottom-0 after:left-0 after:w-6 after:h-0.5 after:bg-primary after:rounded-full' 
+                      : 'text-gray-600 hover:text-primary'
+                  }`} onClick={() => setIsMenuOpen(false)}>Su Kaçağı Tespiti</a>
+                  <a href="/tikaniklik-acma" className={`transition-colors relative ${
+                    window.location.pathname === '/tikaniklik-acma' 
+                      ? 'text-primary after:absolute after:bottom-0 after:left-0 after:w-6 after:h-0.5 after:bg-primary after:rounded-full' 
+                      : 'text-gray-600 hover:text-primary'
+                  }`} onClick={() => setIsMenuOpen(false)}>Tıkanıklık Açma</a>
+                  <a href="/petek-temizligi" className={`transition-colors relative ${
+                    window.location.pathname === '/petek-temizligi' 
+                      ? 'text-primary after:absolute after:bottom-0 after:left-0 after:w-6 after:h-0.5 after:bg-primary after:rounded-full' 
+                      : 'text-gray-600 hover:text-primary'
+                  }`} onClick={() => setIsMenuOpen(false)}>Petek Temizliği</a>
+                  <a href="/musluk-tamiri" className={`transition-colors relative ${
+                    window.location.pathname === '/musluk-tamiri' 
+                      ? 'text-primary after:absolute after:bottom-0 after:left-0 after:w-6 after:h-0.5 after:bg-primary after:rounded-full' 
+                      : 'text-gray-600 hover:text-primary'
+                  }`} onClick={() => setIsMenuOpen(false)}>Musluk Tamiri</a>
+                  <a href="/klozet-tamiri" className={`transition-colors relative ${
+                    window.location.pathname === '/klozet-tamiri' 
+                      ? 'text-primary after:absolute after:bottom-0 after:left-0 after:w-6 after:h-0.5 after:bg-primary after:rounded-full' 
+                      : 'text-gray-600 hover:text-primary'
+                  }`} onClick={() => setIsMenuOpen(false)}>Klozet Tamiri</a>
+                  <a href="/batarya-degisimi" className={`transition-colors relative ${
+                    window.location.pathname === '/batarya-degisimi' 
+                      ? 'text-primary after:absolute after:bottom-0 after:left-0 after:w-6 after:h-0.5 after:bg-primary after:rounded-full' 
+                      : 'text-gray-600 hover:text-primary'
+                  }`} onClick={() => setIsMenuOpen(false)}>Batarya Değişimi</a>
+                  <a href="/kombi-servisi" className={`transition-colors relative ${
+                    window.location.pathname === '/kombi-servisi' 
+                      ? 'text-primary after:absolute after:bottom-0 after:left-0 after:w-6 after:h-0.5 after:bg-primary after:rounded-full' 
+                      : 'text-gray-600 hover:text-primary'
+                  }`} onClick={() => setIsMenuOpen(false)}>Kombi Servisi</a>
+                  <a href="/acil-mudahale" className={`transition-colors relative ${
+                    window.location.pathname === '/acil-mudahale' 
+                      ? 'text-primary after:absolute after:bottom-0 after:left-0 after:w-6 after:h-0.5 after:bg-primary after:rounded-full' 
+                      : 'text-gray-600 hover:text-primary'
+                  }`} onClick={() => setIsMenuOpen(false)}>Acil Müdahale</a>
                 </div>
               </div>
               

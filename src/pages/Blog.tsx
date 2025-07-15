@@ -18,7 +18,7 @@ const Blog = () => {
       date: "15 Ocak 2025",
       author: "Kocaeli Uzman Tesisat",
       readTime: "3 dk okuma",
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=250&fit=crop",
+      image: "/src/assets/su-kacagi-blog.jpg",
       slug: "su-kacagi-belirtileri"
     },
     {
@@ -28,7 +28,7 @@ const Blog = () => {
       date: "12 Ocak 2025",
       author: "Kocaeli Uzman Tesisat",
       readTime: "4 dk okuma",
-      image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=250&fit=crop",
+      image: "/src/assets/tikaniklik-acma-blog.jpg",
       slug: "kirmadan-su-kacagi-tespiti"
     },
     {
@@ -38,7 +38,7 @@ const Blog = () => {
       date: "10 Ocak 2025",
       author: "Kocaeli Uzman Tesisatçı",
       readTime: "5 dk okuma",
-      image: "https://images.unsplash.com/photo-1558623143-ca2c4f95c9b6?w=400&h=250&fit=crop",
+      image: "/src/assets/kombi-bakimi-blog.jpg",
       slug: "petek-temizligi-fiyatlari"
     },
     {
@@ -78,7 +78,7 @@ const Blog = () => {
       date: "8 Ocak 2025",
       author: "Kocaeli Uzman Tesisatçı",
       readTime: "4 dk okuma",
-      image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=250&fit=crop"
+      image: "/src/assets/tikaniklik-acma-blog.jpg"
     },
     {
       id: 5,
@@ -87,7 +87,7 @@ const Blog = () => {
       date: "5 Ocak 2025",
       author: "Kocaeli Uzman Tesisatçı",
       readTime: "6 dk okuma",
-      image: "https://images.unsplash.com/photo-1558623143-ca2c4f95c9b6?w=400&h=250&fit=crop"
+      image: "/src/assets/kombi-bakimi-blog.jpg"
     },
     {
       id: 6,
@@ -96,7 +96,7 @@ const Blog = () => {
       date: "3 Ocak 2025",
       author: "Kocaeli Uzman Tesisatçı",
       readTime: "3 dk okuma",
-      image: "/lovable-uploads/c346c760-853a-4ab1-9bc7-5f3d4efccd0f.png"
+      image: "/src/assets/musluk-tamiri-blog.jpg"
     }
   ];
 
@@ -133,9 +133,7 @@ const Blog = () => {
                 key={post.id} 
                 className="group hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer"
                 onClick={() => {
-                  const link = document.createElement('a');
-                  link.href = `/blog/${post.id}`;
-                  link.click();
+                  window.location.href = `/blog/${post.id}`;
                 }}
               >
                 <div className="relative overflow-hidden">
@@ -174,9 +172,7 @@ const Blog = () => {
                   className="group/btn w-full border-primary text-primary hover:bg-primary hover:text-white"
                 onClick={(e) => {
                     e.stopPropagation();
-                    const link = document.createElement('a');
-                    link.href = `/blog/${post.id}`;
-                    link.click();
+                    window.location.href = `/blog/${post.id}`;
                   }}
                  >
                     Devamını Oku
