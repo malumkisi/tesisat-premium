@@ -5,11 +5,11 @@ import MobileHeader from "@/components/MobileHeader";
 import Footer from "@/components/Footer";
 import { Calendar, User, ArrowLeft, Clock, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 const BlogPost = () => {
-  const { id } = useParams();
+  const {
+    id
+  } = useParams();
   const [post, setPost] = useState<any>(null);
-
   const blogPosts = {
     "1": {
       id: 1,
@@ -117,7 +117,7 @@ const BlogPost = () => {
     },
     "2": {
       id: 2,
-      title: "Kırmadan Su Kaçağı Tespiti Gerçekten Mümkün mü?", 
+      title: "Kırmadan Su Kaçağı Tespiti Gerçekten Mümkün mü?",
       date: "12 Ocak 2025",
       author: "Kocaeli Uzman Tesisatçı",
       readTime: "4 dk okuma",
@@ -154,7 +154,7 @@ const BlogPost = () => {
     "3": {
       id: 3,
       title: "Kocaeli'de Petek Temizliği Fiyatları ve Nelere Dikkat Edilmeli?",
-      date: "10 Ocak 2025", 
+      date: "10 Ocak 2025",
       author: "Kocaeli Uzman Tesisatçı",
       readTime: "5 dk okuma",
       image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=400&fit=crop",
@@ -210,34 +210,25 @@ const BlogPost = () => {
       `
     }
   };
-
   useEffect(() => {
     if (id && blogPosts[id as keyof typeof blogPosts]) {
       setPost(blogPosts[id as keyof typeof blogPosts]);
     }
   }, [id]);
-
   if (!id || !blogPosts[id as keyof typeof blogPosts]) {
     return <Navigate to="/blog" replace />;
   }
-
   if (!post) {
     return <div>Yükleniyor...</div>;
   }
-
-  return (
-    <div className="min-h-screen font-poppins">
+  return <div className="min-h-screen font-poppins">
       <Header />
       <MobileHeader />
       
       {/* Back Button - Responsive for all screens */}
-      <div className="pt-16 md:pt-4 bg-white sticky top-0 z-40 shadow-sm">
+      <div className="pt-16 md:pt-4 bg-white sticky top-0 z-40 shadow-sm mx-0 my-0 px-0 py-0">
         <div className="container mx-auto px-4 py-3">
-          <Button
-            variant="outline"
-            className="text-primary border-primary hover:bg-primary hover:text-white"
-            onClick={() => window.history.back()}
-          >
+          <Button variant="outline" className="text-primary border-primary hover:bg-primary hover:text-white" onClick={() => window.history.back()}>
             <ArrowLeft className="mr-2 h-4 w-4" />
             Geri Dön
           </Button>
@@ -250,11 +241,7 @@ const BlogPost = () => {
           <div className="max-w-4xl mx-auto">
             {/* Featured Image */}
             <div className="mb-6 rounded-lg overflow-hidden">
-              <img 
-                src={post.image}
-                alt={post.title}
-                className="w-full h-48 md:h-64 lg:h-80 object-cover"
-              />
+              <img src={post.image} alt={post.title} className="w-full h-48 md:h-64 lg:h-80 object-cover" />
             </div>
             
             {/* Compact Header Info */}
@@ -278,10 +265,9 @@ const BlogPost = () => {
             </h1>
             
             {/* Content */}
-            <div 
-              className="prose prose-lg max-w-none"
-              dangerouslySetInnerHTML={{ __html: post.content }}
-            />
+            <div className="prose prose-lg max-w-none" dangerouslySetInnerHTML={{
+            __html: post.content
+          }} />
             
             {/* Call to Action */}
             <div className="mt-12 bg-primary text-white rounded-2xl p-8 text-center">
@@ -290,20 +276,11 @@ const BlogPost = () => {
                 Tesisat sorunlarınız için uzman desteği alın
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button 
-                  size="lg"
-                  className="bg-accent hover:bg-accent/90 text-accent-foreground"
-                  onClick={() => window.open('tel:00000000000')}
-                >
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground" onClick={() => window.open('tel:00000000000')}>
                   <Phone className="mr-2 h-5 w-5" />
                   Hemen Ara: 0000 000 00 00
                 </Button>
-                <Button 
-                  size="lg"
-                  variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-primary"
-                  onClick={() => window.open('https://wa.me/900000000000')}
-                >
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary" onClick={() => window.open('https://wa.me/900000000000')}>
                   WhatsApp ile Yaz
                 </Button>
               </div>
@@ -313,8 +290,6 @@ const BlogPost = () => {
       </article>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default BlogPost;
