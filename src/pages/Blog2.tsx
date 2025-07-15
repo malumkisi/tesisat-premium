@@ -5,64 +5,10 @@ import Footer from "@/components/Footer";
 import { Calendar, User, ArrowRight, Clock } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { getBlogPostsByPage } from "@/data/blogData";
 
 const Blog2 = () => {
-  const blogPosts = [
-    {
-      id: 7,
-      title: "Petek Temizliği Sonrası Dikkat Edilmesi Gerekenler",
-      excerpt: "Petek temizliği sonrasında sistemin düzgün çalışması için dikkat edilmesi gereken önemli noktalar. Hava tahliyesi, basınç kontrolü ve ilk çalıştırma işlemleri nasıl yapılır?",
-      date: "28 Aralık 2024",
-      author: "Kocaeli Uzman Tesisatçı",
-      readTime: "4 dk okuma",
-      image: "/src/assets/gallery-1.jpg",
-    },
-    {
-      id: 8,
-      title: "Doğalgaz Tesisat Güvenlik Kontrolleri",
-      excerpt: "Doğalgaz tesisatında güvenlik her şeyden önemlidir. Hangi kontroller yapılmalı, gaz kaçağı nasıl anlaşılır ve acil durumlarda ne yapılmalı?",
-      date: "25 Aralık 2024",
-      author: "Kocaeli Uzman Tesisatçı",
-      readTime: "5 dk okuma",
-      image: "/src/assets/gallery-2.jpg",
-    },
-    {
-      id: 9,
-      title: "Banyo Tadilatında Tesisat Planlaması",
-      excerpt: "Banyo tadilat projelerinde tesisat planlaması kritik önemde. Su ve kanalizasyon hatlarının doğru planlanması ile hem estetik hem fonksiyonel çözümler.",
-      date: "22 Aralık 2024",
-      author: "Kocaeli Uzman Tesisatçı",
-      readTime: "6 dk okuma",
-      image: "/src/assets/gallery-3.jpg",
-    },
-    {
-      id: 10,
-      title: "Apartman Su Deposu Temizliği ve Bakımı",
-      excerpt: "Apartman su depolarının düzenli temizlik ve bakımı halk sağlığı için hayati önem taşır. Temizlik sıklığı, kullanılan kimyasallar ve dikkat edilecek noktalar.",
-      date: "20 Aralık 2024",
-      author: "Kocaeli Uzman Tesisatçı",
-      readTime: "4 dk okuma",
-      image: "/src/assets/gallery-4.jpg",
-    },
-    {
-      id: 11,
-      title: "Kış Aylarında Boru Donması Nasıl Önlenir?",
-      excerpt: "Soğuk kış günlerinde su borularının donması ciddi hasarlara neden olabilir. Donma nasıl önlenir, donmuş boru nasıl çözülür ve alınacak önlemler nelerdir?",
-      date: "18 Aralık 2024",
-      author: "Kocaeli Uzman Tesisatçı",
-      readTime: "5 dk okuma",
-      image: "/src/assets/gallery-5.jpg",
-    },
-    {
-      id: 12,
-      title: "Mutfak Tezgah Altı Su Arıtma Sistemleri",
-      excerpt: "Tezgah altı su arıtma sistemlerinin avantajları, kurulum süreçleri ve bakım gereksinimleri. Hangi sistem eviniz için uygun? Uzman önerileri ve karşılaştırmalar.",
-      date: "15 Aralık 2024",
-      author: "Kocaeli Uzman Tesisatçı", 
-      readTime: "4 dk okuma",
-      image: "/src/assets/gallery-6.jpg",
-    }
-  ];
+  const blogPosts = getBlogPostsByPage(2, 6);
 
   return (
     <div className="min-h-screen font-poppins">

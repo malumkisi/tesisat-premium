@@ -5,71 +5,10 @@ import Footer from "@/components/Footer";
 import { Calendar, User, ArrowRight, Clock, Phone } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { getBlogPostsByPage } from "@/data/blogData";
 
 const Blog = () => {
-  const [currentPage, setCurrentPage] = useState(1);
-  const postsPerPage = 6;
-
-  const blogPosts = [
-    {
-      id: 1,
-      title: "Evde Su Kaçağı Nasıl Anlaşılır? 5 Kesin İşaret",
-      excerpt: "Su kaçağı belirtilerini erken fark ederek büyük hasarları önleyebilirsiniz. Duvar nemlenmeleri, anormal su faturası artışları, musluk damlamaları gibi işaretleri gözden kaçırmayın. İşte dikkat etmeniz gereken 5 önemli işaret ve bu durumlarla karşılaştığınızda ne yapmanız gerektiği hakkında detaylı bilgiler...",
-      date: "15 Ocak 2025",
-      author: "Kocaeli Uzman Tesisat",
-      readTime: "3 dk okuma",
-      image: "/src/assets/su-kacagi-blog.jpg"
-    },
-    {
-      id: 2,
-      title: "Kırmadan Su Kaçağı Tespiti Gerçekten Mümkün mü?",
-      excerpt: "Modern teknoloji sayesinde artık evinizi kırmadan su kaçağı tespiti yapılabiliyor. Termal kamera, ses dinleme cihazları ve nem ölçüm teknolojileri ile duvar içindeki kaçakları tespit ediyoruz. İşte kullanılan cihazlar ve yöntemler hakkında merak ettikleriniz...",
-      date: "12 Ocak 2025",
-      author: "Kocaeli Uzman Tesisat",
-      readTime: "4 dk okuma",
-      image: "/src/assets/tikaniklik-acma-blog.jpg"
-    },
-    {
-      id: 3,
-      title: "Kocaeli'de Petek Temizliği Fiyatları ve Nelere Dikkat Edilmeli?",
-      excerpt: "Petek temizliği ile doğalgaz faturanızdan %30'a kadar tasarruf edebilirsiniz. Petek temizliği fiyatları nasıl belirlenir, hangi faktörler etkilidir? Makineyle temizlik mi yoksa kimyasal temizlik mi daha etkili? İşte fiyatlar ve dikkat edilmesi gerekenler...",
-      date: "10 Ocak 2025",
-      author: "Kocaeli Uzman Tesisatçı",
-      readTime: "5 dk okuma",
-      image: "/src/assets/kombi-bakimi-blog.jpg"
-    },
-    {
-      id: 4,
-      title: "Tıkanıklık Açma: Geleneksel Yöntemler vs Robot Teknolojisi",
-      excerpt: "Lavabo, banyo ve mutfak tıkanıklıklarını açmak için hangi yöntem daha etkili? Geleneksel spiral makineler mi yoksa modern robot teknolojisi mi? Her iki yöntemin avantaj ve dezavantajlarını karşılaştırıyoruz. Hangi durumda hangi yöntem tercih edilmeli?",
-      date: "8 Ocak 2025",
-      author: "Kocaeli Uzman Tesisatçı",
-      readTime: "4 dk okuma",
-      image: "/src/assets/tikaniklik-acma-blog.jpg"
-    },
-    {
-      id: 5,
-      title: "Kombi Bakımı Neden Önemli? Yıllık Bakım Rehberi",
-      excerpt: "Düzenli kombi bakımı ile hem daha verimli ısınma sağlayabilir hem de arıza riskini minimize edebilirsiniz. Kombi bakımında neler yapılır? Hangi parçalar kontrol edilir? Yıllık bakım maliyeti ne kadar? İşte kombi bakımı hakkında bilmeniz gerekenler...",
-      date: "5 Ocak 2025",
-      author: "Kocaeli Uzman Tesisatçı",
-      readTime: "6 dk okuma",
-      image: "/src/assets/kombi-bakimi-blog.jpg"
-    },
-    {
-      id: 6,
-      title: "Musluk Tamiri mi Değişimi mi? Karar Verme Rehberi",
-      excerpt: "Damlayan musluğunuz için tamir mi yaptırmalı yoksa yeni bir musluk mu almalısınız? Hangi durumlarda tamir yeterli, hangi durumlarda değişim şart? Maliyet analizi ve uzun vadeli çözümler için rehber niteliğinde bilgiler...",
-      date: "3 Ocak 2025",
-      author: "Kocaeli Uzman Tesisatçı",
-      readTime: "3 dk okuma",
-      image: "/src/assets/musluk-tamiri-blog.jpg"
-    }
-  ];
-
-  const totalPages = Math.ceil(blogPosts.length / postsPerPage);
-  const startIndex = (currentPage - 1) * postsPerPage;
-  const currentPosts = blogPosts.slice(startIndex, startIndex + postsPerPage);
+  const currentPosts = getBlogPostsByPage(1, 6);
 
   return (
     <div className="min-h-screen font-poppins">
@@ -95,7 +34,7 @@ const Blog = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogPosts.slice(0, 6).map((post) => (
+            {currentPosts.map((post) => (
               <Card 
                 key={post.id} 
                 className="group hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer"
