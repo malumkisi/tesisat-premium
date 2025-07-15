@@ -171,7 +171,7 @@ const BlogPost10 = () => {
                   className="border-white text-white hover:bg-white hover:text-primary"
                   onClick={() => window.open('https://wa.me/900000000000?text=Apartman su deposu temizliği yaptırmak istiyorum.')}
                 >
-                  WhatsApp Randevu
+                  WhatsApp'ta Yaz
                 </Button>
               </div>
             </div>

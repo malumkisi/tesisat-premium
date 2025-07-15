@@ -250,7 +250,7 @@ const BlogPost9 = () => {
                   className="border-white text-white hover:bg-white hover:text-primary"
                   onClick={() => window.open('https://wa.me/900000000000?text=Banyo tadilatı için tesisat planlaması yaptırmak istiyorum.')}
                 >
-                  WhatsApp Proje Talebi
+                  WhatsApp'ta Yaz
                 </Button>
               </div>
             </div>

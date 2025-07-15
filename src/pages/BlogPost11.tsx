@@ -192,7 +192,7 @@ const BlogPost11 = () => {
                   className="border-white text-white hover:bg-white hover:text-primary"
                   onClick={() => window.open('https://wa.me/900000000000?text=Kış donması korunması için yardım istiyorum.')}
                 >
-                  WhatsApp Destek
+                  WhatsApp'ta Yaz
                 </Button>
               </div>
             </div>

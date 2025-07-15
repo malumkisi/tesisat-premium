@@ -214,7 +214,7 @@ const BlogPost8 = () => {
                   className="border-white text-white hover:bg-white hover:text-primary"
                   onClick={() => window.open('https://wa.me/900000000000?text=Doğalgaz güvenlik kontrolü yaptırmak istiyorum.')}
                 >
-                  WhatsApp Randevu
+                  WhatsApp'ta Yaz
                 </Button>
               </div>
             </div>

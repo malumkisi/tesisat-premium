@@ -208,7 +208,7 @@ const BlogPost7 = () => {
                   className="border-white text-white hover:bg-white hover:text-primary"
                   onClick={() => window.open('https://wa.me/900000000000?text=Petek temizliği sonrası sorun yaşıyorum. Yardım alabilir miyim?')}
                 >
-                  WhatsApp Destek
+                  WhatsApp'ta Yaz
                 </Button>
               </div>
             </div>

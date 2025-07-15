@@ -15,7 +15,7 @@ const Blog2 = () => {
       date: "28 Aralık 2024",
       author: "Kocaeli Uzman Tesisatçı",
       readTime: "4 dk okuma",
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=250&fit=crop",
+      image: "/src/assets/gallery-1.jpg",
     },
     {
       id: 8,
@@ -24,7 +24,7 @@ const Blog2 = () => {
       date: "25 Aralık 2024",
       author: "Kocaeli Uzman Tesisatçı",
       readTime: "5 dk okuma",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=250&fit=crop",
+      image: "/src/assets/gallery-2.jpg",
     },
     {
       id: 9,
@@ -33,7 +33,7 @@ const Blog2 = () => {
       date: "22 Aralık 2024",
       author: "Kocaeli Uzman Tesisatçı",
       readTime: "6 dk okuma",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=250&fit=crop",
+      image: "/src/assets/gallery-3.jpg",
     },
     {
       id: 10,
@@ -42,7 +42,7 @@ const Blog2 = () => {
       date: "20 Aralık 2024",
       author: "Kocaeli Uzman Tesisatçı",
       readTime: "4 dk okuma",
-      image: "https://images.unsplash.com/photo-1571049751131-7c1a50b0ebf2?w=400&h=250&fit=crop",
+      image: "/src/assets/gallery-4.jpg",
     },
     {
       id: 11,
@@ -51,7 +51,7 @@ const Blog2 = () => {
       date: "18 Aralık 2024",
       author: "Kocaeli Uzman Tesisatçı",
       readTime: "5 dk okuma",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=250&fit=crop",
+      image: "/src/assets/gallery-5.jpg",
     },
     {
       id: 12,
@@ -60,7 +60,7 @@ const Blog2 = () => {
       date: "15 Aralık 2024",
       author: "Kocaeli Uzman Tesisatçı", 
       readTime: "4 dk okuma",
-      image: "https://images.unsplash.com/photo-1558623143-ca2c4f95c9b6?w=400&h=250&fit=crop",
+      image: "/src/assets/gallery-6.jpg",
     }
   ];
 
