@@ -18,8 +18,7 @@ const Blog = () => {
       date: "15 Ocak 2025",
       author: "Kocaeli Uzman Tesisat",
       readTime: "3 dk okuma",
-      image: "/src/assets/su-kacagi-blog.jpg",
-      slug: "su-kacagi-belirtileri"
+      image: "/src/assets/su-kacagi-blog.jpg"
     },
     {
       id: 2,
@@ -28,8 +27,7 @@ const Blog = () => {
       date: "12 Ocak 2025",
       author: "Kocaeli Uzman Tesisat",
       readTime: "4 dk okuma",
-      image: "/src/assets/tikaniklik-acma-blog.jpg",
-      slug: "kirmadan-su-kacagi-tespiti"
+      image: "/src/assets/tikaniklik-acma-blog.jpg"
     },
     {
       id: 3,
@@ -38,38 +36,7 @@ const Blog = () => {
       date: "10 Ocak 2025",
       author: "Kocaeli Uzman Tesisatçı",
       readTime: "5 dk okuma",
-      image: "/src/assets/kombi-bakimi-blog.jpg",
-      slug: "petek-temizligi-fiyatlari"
-    },
-    {
-      id: 4,
-      title: "Tıkanıklık Açma: Geleneksel Yöntemler vs Robot Teknolojisi",
-      excerpt: "Lavabo, banyo ve mutfak tıkanıklıklarını açmak için hangi yöntem daha etkili? Geleneksel spiral makineler mi yoksa modern robot teknolojisi mi? Her iki yöntemin avantaj ve dezavantajlarını karşılaştırıyoruz. Hangi durumda hangi yöntem tercih edilmeli?",
-      date: "8 Ocak 2025",
-      author: "Kocaeli Uzman Tesisatçı",
-      readTime: "4 dk okuma",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=250&fit=crop",
-      slug: "tikaniklik-acma-yontemleri"
-    },
-    {
-      id: 5,
-      title: "Kombi Bakımı Neden Önemli? Yıllık Bakım Rehberi",
-      excerpt: "Düzenli kombi bakımı ile hem daha verimli ısınma sağlayabilir hem de arıza riskini minimize edebilirsiniz. Kombi bakımında neler yapılır? Hangi parçalar kontrol edilir? Yıllık bakım maliyeti ne kadar? İşte kombi bakımı hakkında bilmeniz gerekenler...",
-      date: "5 Ocak 2025",
-      author: "Kocaeli Uzman Tesisatçı",
-      readTime: "6 dk okuma",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=250&fit=crop",
-      slug: "kombi-bakimi-rehberi"
-    },
-    {
-      id: 6,
-      title: "Musluk Tamiri mi Değişimi mi? Karar Verme Rehberi",
-      excerpt: "Damlayan musluğunuz için tamir mi yaptırmalı yoksa yeni bir musluk mu almalısınız? Hangi durumlarda tamir yeterli, hangi durumlarda değişim şart? Maliyet analizi ve uzun vadeli çözümler için rehber niteliğinde bilgiler...",
-      date: "3 Ocak 2025",
-      author: "Kocaeli Uzman Tesisatçı",
-      readTime: "3 dk okuma",
-      image: "https://images.unsplash.com/photo-1571049751131-7c1a50b0ebf2?w=400&h=250&fit=crop",
-      slug: "musluk-tamir-degisim"
+      image: "/src/assets/kombi-bakimi-blog.jpg"
     },
     {
       id: 4,
@@ -132,13 +99,7 @@ const Blog = () => {
               <Card 
                 key={post.id} 
                 className="group hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer"
-                onClick={() => {
-                  if (post.slug) {
-                    window.location.href = `/${post.slug}`;
-                  } else {
-                    window.location.href = `/blog/${post.id}`;
-                  }
-                }}
+                onClick={() => window.location.href = `/blog/${post.id}`}
               >
                 <div className="relative overflow-hidden">
                   <img 
@@ -174,13 +135,9 @@ const Blog = () => {
                  <Button 
                   variant="outline" 
                   className="group/btn w-full border-primary text-primary hover:bg-primary hover:text-white"
-                onClick={(e) => {
+                  onClick={(e) => {
                     e.stopPropagation();
-                    if (post.slug) {
-                      window.location.href = `/${post.slug}`;
-                    } else {
-                      window.location.href = `/blog/${post.id}`;
-                    }
+                    window.location.href = `/blog/${post.id}`;
                   }}
                  >
                     Devamını Oku

@@ -47,8 +47,8 @@ const App = () => (
           <Route path="/kombi-servisi" element={<KombiServisi />} />
           <Route path="/acil-mudahale" element={<AcilMudahale />} />
           <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:id" element={<BlogPost />} />
-        <Route path="/blog2/:id" element={<BlogPost2 />} />
+        <Route path="/blog/1" element={<BlogPost />} />
+        <Route path="/blog/2" element={<BlogPost2 />} />
         <Route path="/blog/3" element={<BlogPost3 />} />
         <Route path="/blog/4" element={<BlogPost4 />} />
         <Route path="/blog/5" element={<BlogPost5 />} />
@@ -58,10 +58,8 @@ const App = () => (
         <Route path="/blog/9" element={<BlogPost9 />} />
         <Route path="/blog/10" element={<BlogPost10 />} />
         <Route path="/blog/11" element={<BlogPost11 />} />
-        <Route path="/blog/12" element={<BlogPost8 />} />
         <Route path="/blog2" element={<Blog2 />} />
         <Route path="/galeri" element={<Gallery />} />
-        <Route path="/musluk-tamir-degisim" element={<BlogPost6 />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

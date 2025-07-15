@@ -211,10 +211,10 @@ const BlogPost8 = () => {
                 <Button 
                   size="lg"
                   variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-primary"
+                  className="border-white text-white hover:bg-white hover:text-primary animate-pulse"
                   onClick={() => window.open('https://wa.me/900000000000?text=Doğalgaz güvenlik kontrolü yaptırmak istiyorum.')}
                 >
-                  WhatsApp'ta Yaz
+                  <span className="text-white">WhatsApp'ta Yaz</span>
                 </Button>
               </div>
             </div>

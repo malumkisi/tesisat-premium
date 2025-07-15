@@ -189,10 +189,10 @@ const BlogPost11 = () => {
                 <Button 
                   size="lg"
                   variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-primary"
+                  className="border-white text-white hover:bg-white hover:text-primary animate-pulse"
                   onClick={() => window.open('https://wa.me/900000000000?text=Kış donması korunması için yardım istiyorum.')}
                 >
-                  WhatsApp'ta Yaz
+                  <span className="text-white">WhatsApp'ta Yaz</span>
                 </Button>
               </div>
             </div>
