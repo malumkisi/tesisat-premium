@@ -89,7 +89,7 @@ const BataryaDegisimi = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1559235038-1beb4706e121?w=600&h=400&fit=crop"
+                src="/src/assets/batarya-degisimi.jpg"
                 alt="Batarya değişimi"
                 className="w-full h-auto rounded-2xl shadow-lg"
               />

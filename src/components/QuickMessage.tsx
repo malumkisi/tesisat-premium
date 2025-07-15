@@ -38,7 +38,7 @@ Mesaj: ${formData.message || "Tesisat konusunda bilgi almak istiyorum."}`;
       {!isOpen ? (
         <Button
           onClick={() => setIsOpen(true)}
-          className="bg-blue-600 hover:bg-blue-700 text-white rounded-full p-4 shadow-xl"
+          className="bg-blue-600 hover:bg-blue-700 text-white rounded-full p-4 shadow-xl animate-pulse"
         >
           <MessageCircle className="h-6 w-6" />
         </Button>

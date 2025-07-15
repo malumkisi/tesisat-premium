@@ -19,6 +19,9 @@ import BlogPost2 from "./pages/BlogPost2";
 import BlogPost3 from "./pages/BlogPost3";
 import BlogPost4 from "./pages/BlogPost4";
 import BlogPost5 from "./pages/BlogPost5";
+import BlogPost6 from "./pages/BlogPost6";
+import BlogPost7 from "./pages/BlogPost7";
+import BlogPost8 from "./pages/BlogPost8";
 import Blog2 from "./pages/Blog2";
 import Gallery from "./pages/Gallery";
 
@@ -46,8 +49,16 @@ const App = () => (
         <Route path="/blog/3" element={<BlogPost3 />} />
         <Route path="/blog/4" element={<BlogPost4 />} />
         <Route path="/blog/5" element={<BlogPost5 />} />
+        <Route path="/blog/6" element={<BlogPost6 />} />
+        <Route path="/blog/7" element={<BlogPost7 />} />
+        <Route path="/blog/8" element={<BlogPost8 />} />
+        <Route path="/blog/9" element={<BlogPost7 />} />
+        <Route path="/blog/10" element={<BlogPost8 />} />
+        <Route path="/blog/11" element={<BlogPost7 />} />
+        <Route path="/blog/12" element={<BlogPost8 />} />
         <Route path="/blog2" element={<Blog2 />} />
         <Route path="/galeri" element={<Gallery />} />
+        <Route path="/musluk-tamir-degisim" element={<BlogPost6 />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

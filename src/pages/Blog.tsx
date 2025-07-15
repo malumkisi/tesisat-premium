@@ -2,7 +2,7 @@ import { useState } from "react";
 import Header from "@/components/Header";
 import MobileHeader from "@/components/MobileHeader";
 import Footer from "@/components/Footer";
-import { Calendar, User, ArrowRight, Clock } from "lucide-react";
+import { Calendar, User, ArrowRight, Clock, Phone } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -133,7 +133,11 @@ const Blog = () => {
                 key={post.id} 
                 className="group hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer"
                 onClick={() => {
-                  window.location.href = `/blog/${post.id}`;
+                  if (post.slug) {
+                    window.location.href = `/${post.slug}`;
+                  } else {
+                    window.location.href = `/blog/${post.id}`;
+                  }
                 }}
               >
                 <div className="relative overflow-hidden">
@@ -172,7 +176,11 @@ const Blog = () => {
                   className="group/btn w-full border-primary text-primary hover:bg-primary hover:text-white"
                 onClick={(e) => {
                     e.stopPropagation();
-                    window.location.href = `/blog/${post.id}`;
+                    if (post.slug) {
+                      window.location.href = `/${post.slug}`;
+                    } else {
+                      window.location.href = `/blog/${post.id}`;
+                    }
                   }}
                  >
                     Devamını Oku
@@ -221,24 +229,30 @@ const Blog = () => {
         </div>
       </section>
 
-      {/* Newsletter */}
+      {/* Contact Section */}
       <section className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl font-bold text-primary mb-4">
-              Blog Güncellemelerini Kaçırmayın
+              Tesisat Sorunlarınız İçin Bize Ulaşın
             </h2>
             <p className="text-gray-600 mb-8">
-              Yeni blog yazılarımızdan haberdar olmak için bültenimize abone olun.
+              7/24 acil tesisatçı hizmeti. Hızlı çözüm için WhatsApp'tan yazın.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-              <input 
-                type="email" 
-                placeholder="xxx@xxxxx.com"
-                className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
-              />
-              <Button className="bg-primary hover:bg-primary/90 px-6 py-3">
-                Abone Ol
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button 
+                className="bg-primary hover:bg-primary/90 px-8 py-3"
+                onClick={() => window.open('tel:00000000000')}
+              >
+                <Phone className="mr-2 h-4 w-4" />
+                Hemen Arayın
+              </Button>
+              <Button 
+                variant="outline"
+                className="border-primary text-primary hover:bg-primary hover:text-white px-8 py-3"
+                onClick={() => window.open('https://wa.me/900000000000?text=Blog sayfasından ulaşıyorum. Tesisat konusunda bilgi almak istiyorum.')}
+              >
+                WhatsApp'tan Yazın
               </Button>
             </div>
           </div>

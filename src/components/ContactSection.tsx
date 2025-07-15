@@ -96,7 +96,7 @@ Mesaj: ${formData.message || "Tesisat konusunda yardım almak istiyorum."}`;
                       <Button 
                         variant="outline" 
                         size="sm"
-                        className="mt-2 border-white text-white hover:bg-white hover:text-primary bg-white/10"
+                        className="mt-2 border-white text-white hover:bg-white hover:text-primary bg-white/10 animate-pulse"
                         onClick={() => window.open('https://wa.me/900000000000')}
                       >
                         WhatsApp'ta Yaz
