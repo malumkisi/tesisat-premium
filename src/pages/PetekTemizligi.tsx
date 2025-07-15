@@ -4,21 +4,15 @@ import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import MobileHeader from "@/components/MobileHeader";
 import Footer from "@/components/Footer";
-
 const PetekTemizligi = () => {
-  return (
-    <div className="min-h-screen font-poppins">
+  return <div className="min-h-screen font-poppins">
       <Header />
       <MobileHeader />
       
       {/* Back Button */}
-      <div className="pt-16 md:pt-4 bg-primary">
+      <div className="pt-16 md:pt-4 bg-primary py-[16px]">
         <div className="container mx-auto px-4">
-          <Button
-            variant="outline"
-            onClick={() => window.location.href = '/#hizmetler'}
-            className="flex items-center gap-2 bg-white shadow-sm hover:shadow-md border-gray-300"
-          >
+          <Button variant="outline" onClick={() => window.location.href = '/#hizmetler'} className="flex items-center gap-2 bg-white shadow-sm hover:shadow-md border-gray-300">
             <ArrowLeft className="h-4 w-4" />
             Hizmetlerimize Geri Dön
           </Button>
@@ -39,11 +33,7 @@ const PetekTemizligi = () => {
               Makineyle petek temizliği ile doğalgaz faturanızdan %30'a kadar tasarruf edin. 
               Özel kimyasallar ve modern makinelerle profesyonel temizlik.
             </p>
-            <Button 
-              size="lg" 
-              className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-lg px-6 sm:px-8 py-4 rounded-full w-full sm:w-auto"
-              onClick={() => window.open('tel:00000000000')}
-            >
+            <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-lg px-6 sm:px-8 py-4 rounded-full w-full sm:w-auto" onClick={() => window.open('tel:00000000000')}>
               <Phone className="mr-2 h-5 w-5" />
               <span className="text-center">Hemen Arayın: 0000 000 00 00</span>
             </Button>
@@ -88,11 +78,7 @@ const PetekTemizligi = () => {
               </div>
             </div>
             <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop"
-                alt="Petek temizleme makinesi"
-                className="w-full h-auto rounded-2xl shadow-lg"
-              />
+              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop" alt="Petek temizleme makinesi" className="w-full h-auto rounded-2xl shadow-lg" />
             </div>
           </div>
 
@@ -173,11 +159,7 @@ const PetekTemizligi = () => {
           <p className="text-xl text-white/90 mb-8">
             Doğalgaz faturanızdan tasarruf etmek için hemen arayın!
           </p>
-          <Button 
-            size="lg" 
-            className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-lg px-8 py-4 rounded-full"
-            onClick={() => window.open('tel:00000000000')}
-          >
+          <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-lg px-8 py-4 rounded-full" onClick={() => window.open('tel:00000000000')}>
             <Phone className="mr-2 h-5 w-5" />
             0000 000 00 00
           </Button>
@@ -185,8 +167,6 @@ const PetekTemizligi = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default PetekTemizligi;
