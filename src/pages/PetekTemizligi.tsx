@@ -12,7 +12,7 @@ const PetekTemizligi = () => {
       <MobileHeader />
       
       {/* Back Button */}
-      <div className="pt-20 md:pt-4 bg-primary">
+      <div className="pt-16 md:pt-4 bg-primary">
         <div className="container mx-auto px-4">
           <Button
             variant="outline"
