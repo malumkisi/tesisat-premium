@@ -11,7 +11,7 @@ const BlogPost3 = () => {
       <MobileHeader />
       
       {/* Back Button - Responsive for all screens */}
-      <div className="pt-16 md:pt-4 bg-white sticky top-0 z-40 shadow-sm">
+      <div className="pt-4 bg-white sticky top-0 z-40 shadow-sm">
         <div className="container mx-auto px-4 py-2">
           <Button
             variant="outline"
