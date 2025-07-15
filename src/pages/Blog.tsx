@@ -96,7 +96,7 @@ const Blog = () => {
       date: "3 Ocak 2025",
       author: "Kocaeli Uzman Tesisatçı",
       readTime: "3 dk okuma",
-      image: "/lovable-uploads/10329904-ecbc-45fb-a018-b86ee13b22a4.png"
+      image: "/lovable-uploads/c346c760-853a-4ab1-9bc7-5f3d4efccd0f.png"
     }
   ];
 
@@ -202,15 +202,7 @@ const Blog = () => {
                   variant="outline"
                   size="sm"
                   className="border-primary text-primary hover:bg-primary hover:text-white"
-                  onClick={() => {
-                    const nextPageUrl = '/blog2';
-                    const link = document.createElement('a');
-                    link.href = nextPageUrl;
-                    link.style.display = 'none';
-                    document.body.appendChild(link);
-                    link.click();
-                    document.body.removeChild(link);
-                  }}
+                  onClick={() => window.location.href = '/blog2'}
                 >
                   2
                 </Button>
@@ -218,15 +210,7 @@ const Blog = () => {
               <Button 
                 variant="outline"
                 className="border-primary text-primary hover:bg-primary hover:text-white"
-                onClick={() => {
-                  const nextPageUrl = '/blog2';
-                  const link = document.createElement('a');
-                  link.href = nextPageUrl;
-                  link.style.display = 'none';
-                  document.body.appendChild(link);
-                  link.click();
-                  document.body.removeChild(link);
-                }}
+                onClick={() => window.location.href = '/blog2'}
               >
                 Sonraki Sayfa
               </Button>

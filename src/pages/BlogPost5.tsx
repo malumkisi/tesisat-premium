@@ -11,8 +11,8 @@ const BlogPost5 = () => {
       <MobileHeader />
       
       {/* Back Button - Responsive for all screens */}
-      <div className="bg-white sticky top-0 z-40 shadow-sm">
-        <div className="container mx-auto px-4 py-3 pt-20 md:pt-4">
+      <div className="pt-16 md:pt-4 bg-white sticky top-0 z-40 shadow-sm">
+        <div className="container mx-auto px-4 py-3">
           <Button
             variant="outline"
             className="text-primary border-primary hover:bg-primary hover:text-white"
@@ -32,7 +32,7 @@ const BlogPost5 = () => {
             <img 
               src="/lovable-uploads/c346c760-853a-4ab1-9bc7-5f3d4efccd0f.png"
               alt="Musluk tamir ve değişim"
-              className="w-full h-56 md:h-64 lg:h-80 object-cover rounded-lg shadow-lg"
+              className="w-full h-48 md:h-64 lg:h-80 object-cover rounded-lg shadow-lg"
             />
           </div>
 

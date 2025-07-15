@@ -11,8 +11,8 @@ const BlogPost3 = () => {
       <MobileHeader />
       
       {/* Back Button - Responsive for all screens */}
-      <div className="bg-white sticky top-0 z-40 shadow-sm">
-        <div className="container mx-auto px-4 py-3 pt-20 md:pt-4">
+      <div className="pt-16 md:pt-4 bg-white sticky top-0 z-40 shadow-sm">
+        <div className="container mx-auto px-4 py-3">
           <Button
             variant="outline"
             className="text-primary border-primary hover:bg-primary hover:text-white"
@@ -32,7 +32,7 @@ const BlogPost3 = () => {
             <img 
               src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&h=400&fit=crop"
               alt="Tıkanıklık açma teknolojileri"
-              className="w-full h-56 md:h-64 lg:h-80 object-cover rounded-lg shadow-lg"
+              className="w-full h-48 md:h-64 lg:h-80 object-cover rounded-lg shadow-lg"
             />
           </div>
 
