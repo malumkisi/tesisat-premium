@@ -10,13 +10,21 @@ import { getBlogPost, BlogPost as BlogPostType } from "@/data/blogData";
 const BlogPost = () => {
   const { id } = useParams();
   const [post, setPost] = useState<BlogPostType | null>(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     if (id) {
       const postData = getBlogPost(parseInt(id));
       setPost(postData || null);
+      setLoading(false);
+    } else {
+      setLoading(false);
     }
   }, [id]);
+
+  if (loading) {
+    return <div className="min-h-screen flex items-center justify-center">Yükleniyor...</div>;
+  }
 
   if (!id || !post) {
     return <Navigate to="/blog" replace />;
