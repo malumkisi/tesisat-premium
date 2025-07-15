@@ -132,13 +132,17 @@ const Blog = () => {
               <Card 
                 key={post.id} 
                 className="group hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer"
-                onClick={() => window.location.href = `/blog/${post.id}`}
+                onClick={() => {
+                  const link = document.createElement('a');
+                  link.href = `/blog/${post.id}`;
+                  link.click();
+                }}
               >
                 <div className="relative overflow-hidden">
                   <img 
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-200"
                   />
                   <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">
                     {post.readTime}
@@ -168,9 +172,11 @@ const Blog = () => {
                  <Button 
                   variant="outline" 
                   className="group/btn w-full border-primary text-primary hover:bg-primary hover:text-white"
-                  onClick={(e) => {
+                onClick={(e) => {
                     e.stopPropagation();
-                    window.location.href = `/blog/${post.id}`;
+                    const link = document.createElement('a');
+                    link.href = `/blog/${post.id}`;
+                    link.click();
                   }}
                  >
                     Devamını Oku

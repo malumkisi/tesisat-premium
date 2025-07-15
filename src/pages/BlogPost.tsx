@@ -226,11 +226,11 @@ const BlogPost = () => {
       <MobileHeader />
       
       {/* Back Button - Responsive for all screens */}
-      <div className="pt-16 md:pt-4 bg-white sticky top-0 z-40 shadow-sm mx-0 my-0 px-0 py-0">
+      <div className="pt-16 md:pt-4 bg-white sticky top-0 z-40 shadow-sm">
         <div className="container mx-auto px-4 py-3">
           <Button variant="outline" className="text-primary border-primary hover:bg-primary hover:text-white" onClick={() => window.history.back()}>
             <ArrowLeft className="mr-2 h-4 w-4" />
-            Geri Dön
+            Bloglara Geri Dön
           </Button>
         </div>
       </div>
@@ -241,7 +241,7 @@ const BlogPost = () => {
           <div className="max-w-4xl mx-auto">
             {/* Featured Image */}
             <div className="mb-6 rounded-lg overflow-hidden">
-              <img src={post.image} alt={post.title} className="w-full h-48 md:h-64 lg:h-80 object-cover" />
+              <img src={post.image} alt={post.title} className="w-full h-56 object-cover" />
             </div>
             
             {/* Compact Header Info */}

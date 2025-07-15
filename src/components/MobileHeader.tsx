@@ -64,8 +64,8 @@ const MobileHeader = () => {
             <nav className="flex flex-col gap-4">
               <a 
                 href="/" 
-                className={`text-gray-700 hover:text-primary transition-colors font-medium ${
-                  window.location.pathname === '/' ? 'text-primary bg-primary/10 px-3 py-2 rounded-lg' : ''
+                className={`text-gray-700 hover:text-primary transition-colors font-medium relative ${
+                  window.location.pathname === '/' ? 'text-primary after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-primary after:rounded-full' : ''
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -88,8 +88,8 @@ const MobileHeader = () => {
               
               <a 
                 href="/blog" 
-                className={`text-gray-700 hover:text-primary transition-colors font-medium ${
-                  window.location.pathname === '/blog' ? 'text-primary bg-primary/10 px-3 py-2 rounded-lg' : ''
+                className={`text-gray-700 hover:text-primary transition-colors font-medium relative ${
+                  window.location.pathname === '/blog' || window.location.pathname.includes('/blog') ? 'text-primary after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-primary after:rounded-full' : ''
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -97,8 +97,8 @@ const MobileHeader = () => {
               </a>
               <a 
                 href="/galeri" 
-                className={`text-gray-700 hover:text-primary transition-colors font-medium ${
-                  window.location.pathname === '/galeri' ? 'text-primary bg-primary/10 px-3 py-2 rounded-lg' : ''
+                className={`text-gray-700 hover:text-primary transition-colors font-medium relative ${
+                  window.location.pathname === '/galeri' ? 'text-primary after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-primary after:rounded-full' : ''
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >

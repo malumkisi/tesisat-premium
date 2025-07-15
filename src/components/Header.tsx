@@ -57,25 +57,33 @@ const Header = () => {
             <nav className="flex gap-2 lg:gap-6">
               <a 
                 href="/" 
-                className={`text-gray-700 hover:text-primary transition-colors font-medium text-sm lg:text-base ${
-                  window.location.pathname === '/' ? 'text-primary bg-primary/10 px-3 py-1 rounded-full' : ''
+                className={`text-gray-700 hover:text-primary transition-colors font-medium text-sm lg:text-base relative ${
+                  window.location.pathname === '/' ? 'text-primary after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-primary after:rounded-full' : ''
                 }`}
               >
                 Ana Sayfa
               </a>
               <div className="relative group">
-                <a href="/#hizmetler" className="flex items-center text-gray-700 hover:text-primary transition-colors font-medium text-sm lg:text-base"
-                   onClick={(e) => {
-                     e.preventDefault();
-                     if (window.location.pathname === '/') {
-                       document.getElementById('hizmetler')?.scrollIntoView({ behavior: 'smooth' });
-                     } else {
-                       window.location.href = '/#hizmetler';
-                     }
-                   }}>
+                <button 
+                  className={`flex items-center text-gray-700 hover:text-primary transition-colors font-medium text-sm lg:text-base relative ${
+                    window.location.pathname.includes('/su-kacagi') || window.location.pathname.includes('/tikaniklik') || 
+                    window.location.pathname.includes('/petek') || window.location.pathname.includes('/musluk') || 
+                    window.location.pathname.includes('/klozet') || window.location.pathname.includes('/batarya') || 
+                    window.location.pathname.includes('/kombi') || window.location.pathname.includes('/acil') 
+                    ? 'text-primary after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-primary after:rounded-full' : ''
+                  }`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    if (window.location.pathname === '/') {
+                      document.getElementById('hizmetler')?.scrollIntoView({ behavior: 'smooth' });
+                    } else {
+                      window.location.href = '/#hizmetler';
+                    }
+                  }}
+                >
                   Hizmetlerimiz
                   <ChevronDown className="ml-1 h-4 w-4 group-hover:rotate-180 transition-transform" />
-                </a>
+                </button>
                 <div className="absolute top-full left-0 mt-2 w-56 lg:w-64 bg-white shadow-lg border rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                   <div className="p-2">
                     <a href="/su-kacagi-tespiti" className="flex items-center px-3 lg:px-4 py-2 lg:py-3 text-gray-700 hover:bg-gray-50 hover:text-primary rounded-lg transition-colors text-sm">
@@ -107,16 +115,16 @@ const Header = () => {
               </div>
               <a 
                 href="/blog" 
-                className={`text-gray-700 hover:text-primary transition-colors font-medium text-sm lg:text-base ${
-                  window.location.pathname === '/blog' ? 'text-primary bg-primary/10 px-3 py-1 rounded-full' : ''
+                className={`text-gray-700 hover:text-primary transition-colors font-medium text-sm lg:text-base relative ${
+                  window.location.pathname === '/blog' || window.location.pathname.includes('/blog') ? 'text-primary after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-primary after:rounded-full' : ''
                 }`}
               >
                 Blog
               </a>
               <a 
                 href="/galeri" 
-                className={`text-gray-700 hover:text-primary transition-colors font-medium text-sm lg:text-base ${
-                  window.location.pathname === '/galeri' ? 'text-primary bg-primary/10 px-3 py-1 rounded-full' : ''
+                className={`text-gray-700 hover:text-primary transition-colors font-medium text-sm lg:text-base relative ${
+                  window.location.pathname === '/galeri' ? 'text-primary after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-primary after:rounded-full' : ''
                 }`}
               >
                 Galeri

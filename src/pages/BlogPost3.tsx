@@ -32,7 +32,7 @@ const BlogPost3 = () => {
             <img 
               src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&h=400&fit=crop"
               alt="Tıkanıklık açma teknolojileri"
-              className="w-full h-48 md:h-64 lg:h-80 object-cover rounded-lg shadow-lg"
+              className="w-full h-56 object-cover rounded-lg shadow-lg"
             />
           </div>
 

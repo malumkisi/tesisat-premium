@@ -32,7 +32,7 @@ const BlogPost4 = () => {
             <img 
               src="https://images.unsplash.com/photo-1558623143-ca2c4f95c9b6?w=800&h=400&fit=crop"
               alt="Kombi bakımı"
-              className="w-full h-48 md:h-64 lg:h-80 object-cover rounded-lg shadow-lg"
+              className="w-full h-56 object-cover rounded-lg shadow-lg"
             />
           </div>
 

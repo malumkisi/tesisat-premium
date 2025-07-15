@@ -32,7 +32,7 @@ const BlogPost5 = () => {
             <img 
               src="/lovable-uploads/c346c760-853a-4ab1-9bc7-5f3d4efccd0f.png"
               alt="Musluk tamir ve değişim"
-              className="w-full h-48 md:h-64 lg:h-80 object-cover rounded-lg shadow-lg"
+              className="w-full h-56 object-cover rounded-lg shadow-lg"
             />
           </div>
 

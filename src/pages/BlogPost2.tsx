@@ -316,7 +316,7 @@ const BlogPost2 = () => {
             onClick={() => window.history.back()}
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
-            Geri Dön
+            Bloglara Geri Dön
           </Button>
         </div>
       </div>
@@ -328,7 +328,7 @@ const BlogPost2 = () => {
               <img
                 src={post.image}
                 alt={post.title}
-                className="w-full h-48 md:h-64 lg:h-80 object-cover rounded-lg shadow-lg mb-6"
+                className="w-full h-56 object-cover rounded-lg shadow-lg mb-6"
               />
               
               <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-sm text-gray-600 mb-4">
