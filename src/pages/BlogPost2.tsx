@@ -179,7 +179,7 @@ const BlogPost2 = () => {
       date: "3 Ocak 2025",
       author: "Kocaeli Uzman Tesisatçı",
       readTime: "3 dk okuma",
-      image: "/lovable-uploads/c346c760-853a-4ab1-9bc7-5f3d4efccd0f.png",
+      image: "/lovable-uploads/10329904-ecbc-45fb-a018-b86ee13b22a4.png",
       content: `
         <div class="prose max-w-none">
           <p class="text-lg text-gray-600 mb-6">Damlayan musluğunuz için tamir mi yaptırmalı yoksa yeni bir musluk mu almalısınız? Hangi durumlarda tamir yeterli, hangi durumlarda değişim şart? Maliyet analizi ve uzun vadeli çözümler için rehber niteliğinde bilgiler.</p>
@@ -328,7 +328,7 @@ const BlogPost2 = () => {
               <img
                 src={post.image}
                 alt={post.title}
-                className="w-full h-48 md:h-64 lg:h-80 object-cover rounded-lg shadow-lg mb-6"
+                className="w-full h-56 md:h-64 lg:h-80 object-cover rounded-lg shadow-lg mb-6"
               />
               
               <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-sm text-gray-600 mb-4">

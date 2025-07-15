@@ -241,7 +241,7 @@ const BlogPost = () => {
           <div className="max-w-4xl mx-auto">
             {/* Featured Image */}
             <div className="mb-6 rounded-lg overflow-hidden">
-              <img src={post.image} alt={post.title} className="w-full h-48 md:h-64 lg:h-80 object-cover" />
+              <img src={post.image} alt={post.title} className="w-full h-56 md:h-64 lg:h-80 object-cover rounded-lg shadow-lg" />
             </div>
             
             {/* Compact Header Info */}

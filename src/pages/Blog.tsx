@@ -96,7 +96,7 @@ const Blog = () => {
       date: "3 Ocak 2025",
       author: "Kocaeli Uzman Tesisatçı",
       readTime: "3 dk okuma",
-      image: "/lovable-uploads/c346c760-853a-4ab1-9bc7-5f3d4efccd0f.png"
+      image: "/lovable-uploads/10329904-ecbc-45fb-a018-b86ee13b22a4.png"
     }
   ];
 
