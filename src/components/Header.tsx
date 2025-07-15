@@ -57,7 +57,9 @@ const Header = () => {
             <nav className="flex gap-2 lg:gap-6">
               <a 
                 href="/" 
-                className="text-gray-700 hover:text-primary transition-colors font-medium text-sm lg:text-base"
+                className={`text-gray-700 hover:text-primary transition-colors font-medium text-sm lg:text-base ${
+                  window.location.pathname === '/' ? 'text-primary bg-primary/10 px-3 py-1 rounded-full' : ''
+                }`}
               >
                 Ana Sayfa
               </a>
@@ -105,13 +107,17 @@ const Header = () => {
               </div>
               <a 
                 href="/blog" 
-                className="text-gray-700 hover:text-primary transition-colors font-medium text-sm lg:text-base"
+                className={`text-gray-700 hover:text-primary transition-colors font-medium text-sm lg:text-base ${
+                  window.location.pathname === '/blog' ? 'text-primary bg-primary/10 px-3 py-1 rounded-full' : ''
+                }`}
               >
                 Blog
               </a>
               <a 
                 href="/galeri" 
-                className="text-gray-700 hover:text-primary transition-colors font-medium text-sm lg:text-base"
+                className={`text-gray-700 hover:text-primary transition-colors font-medium text-sm lg:text-base ${
+                  window.location.pathname === '/galeri' ? 'text-primary bg-primary/10 px-3 py-1 rounded-full' : ''
+                }`}
               >
                 Galeri
               </a>

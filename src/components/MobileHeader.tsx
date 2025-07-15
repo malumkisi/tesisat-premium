@@ -64,7 +64,9 @@ const MobileHeader = () => {
             <nav className="flex flex-col gap-4">
               <a 
                 href="/" 
-                className="text-gray-700 hover:text-primary transition-colors font-medium"
+                className={`text-gray-700 hover:text-primary transition-colors font-medium ${
+                  window.location.pathname === '/' ? 'text-primary bg-primary/10 px-3 py-2 rounded-lg' : ''
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Ana Sayfa
@@ -86,14 +88,18 @@ const MobileHeader = () => {
               
               <a 
                 href="/blog" 
-                className="text-gray-700 hover:text-primary transition-colors font-medium"
+                className={`text-gray-700 hover:text-primary transition-colors font-medium ${
+                  window.location.pathname === '/blog' ? 'text-primary bg-primary/10 px-3 py-2 rounded-lg' : ''
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Blog
               </a>
               <a 
                 href="/galeri" 
-                className="text-gray-700 hover:text-primary transition-colors font-medium"
+                className={`text-gray-700 hover:text-primary transition-colors font-medium ${
+                  window.location.pathname === '/galeri' ? 'text-primary bg-primary/10 px-3 py-2 rounded-lg' : ''
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Galeri

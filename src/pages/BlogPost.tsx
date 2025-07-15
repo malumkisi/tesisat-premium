@@ -230,12 +230,12 @@ const BlogPost = () => {
       <Header />
       <MobileHeader />
       
-      {/* Back Button */}
-      <div className="pt-20 md:pt-4 bg-primary">
-        <div className="container mx-auto px-4">
+      {/* Back Button - Responsive for all screens */}
+      <div className="pt-16 md:pt-4 bg-white sticky top-0 z-40 shadow-sm">
+        <div className="container mx-auto px-4 py-3">
           <Button
             variant="outline"
-            className="bg-white/10 text-white border-white/30 hover:bg-white hover:text-primary backdrop-blur-sm"
+            className="text-primary border-primary hover:bg-primary hover:text-white"
             onClick={() => window.history.back()}
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
@@ -244,11 +244,21 @@ const BlogPost = () => {
         </div>
       </div>
 
-      {/* Hero Section */}
-      <section className="bg-primary text-white py-8 lg:py-12">
+      {/* Article Content - Single section with compact header */}
+      <article className="py-6 lg:py-8">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="flex flex-wrap items-center gap-4 text-white/80 mb-4">
+            {/* Featured Image */}
+            <div className="mb-6 rounded-lg overflow-hidden">
+              <img 
+                src={post.image}
+                alt={post.title}
+                className="w-full h-48 md:h-64 lg:h-80 object-cover"
+              />
+            </div>
+            
+            {/* Compact Header Info */}
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-sm text-gray-600 mb-4">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
                 <span>{post.date}</span>
@@ -263,25 +273,9 @@ const BlogPost = () => {
               </div>
             </div>
             
-            <h1 className="text-2xl lg:text-3xl font-bold leading-tight">
+            <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-primary mb-6 leading-tight">
               {post.title}
             </h1>
-          </div>
-        </div>
-      </section>
-
-      {/* Article Content */}
-      <article className="py-12 lg:py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            {/* Featured Image */}
-            <div className="mb-8 rounded-2xl overflow-hidden">
-              <img 
-                src={post.image}
-                alt={post.title}
-                className="w-full h-64 lg:h-96 object-cover"
-              />
-            </div>
             
             {/* Content */}
             <div 

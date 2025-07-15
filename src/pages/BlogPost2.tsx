@@ -307,12 +307,12 @@ const BlogPost2 = () => {
       <Header />
       <MobileHeader />
       
-      {/* Back Button */}
-      <div className="pt-20 md:pt-4 bg-primary">
-        <div className="container mx-auto px-4">
+      {/* Back Button - Responsive for all screens */}
+      <div className="pt-16 md:pt-4 bg-white sticky top-0 z-40 shadow-sm">
+        <div className="container mx-auto px-4 py-3">
           <Button
             variant="outline"
-            className="bg-white/10 text-white border-white/30 hover:bg-white hover:text-primary backdrop-blur-sm"
+            className="text-primary border-primary hover:bg-primary hover:text-white"
             onClick={() => window.history.back()}
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
@@ -321,33 +321,32 @@ const BlogPost2 = () => {
         </div>
       </div>
 
-      <div className="py-8 lg:py-12">
+      <div className="py-6 lg:py-8">
         <div className="container mx-auto px-4">
-
           <article className="max-w-4xl mx-auto">
-            <div className="mb-8">
+            <div className="mb-6">
               <img
                 src={post.image}
                 alt={post.title}
-                className="w-full h-64 md:h-96 object-cover rounded-xl shadow-lg mb-8"
+                className="w-full h-48 md:h-64 lg:h-80 object-cover rounded-lg shadow-lg mb-6"
               />
               
-              <div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
-                <div className="flex items-center gap-1">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-sm text-gray-600 mb-4">
+                <div className="flex items-center gap-2">
                   <Calendar className="h-4 w-4" />
-                  {post.date}
+                  <span>{post.date}</span>
                 </div>
-                <div className="flex items-center gap-1">
+                <div className="flex items-center gap-2">
                   <User className="h-4 w-4" />
-                  {post.author}
+                  <span>{post.author}</span>
                 </div>
-                <div className="flex items-center gap-1">
+                <div className="flex items-center gap-2">
                   <Clock className="h-4 w-4" />
-                  {post.readTime}
+                  <span>{post.readTime}</span>
                 </div>
               </div>
               
-              <h1 className="text-2xl md:text-3xl font-bold text-primary mb-4 font-poppins">
+              <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-primary mb-6 leading-tight">
                 {post.title}
               </h1>
             </div>

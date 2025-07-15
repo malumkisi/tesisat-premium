@@ -10,13 +10,13 @@ const BlogPost5 = () => {
       <Header />
       <MobileHeader />
       
-      {/* Back Button */}
-      <div className="bg-white py-4 sticky top-[80px] md:top-[120px] z-40 border-b shadow-sm">
-        <div className="container mx-auto px-4">
-          <Button 
-            variant="ghost" 
+      {/* Back Button - Responsive for all screens */}
+      <div className="pt-16 md:pt-4 bg-white sticky top-0 z-40 shadow-sm">
+        <div className="container mx-auto px-4 py-3">
+          <Button
+            variant="outline"
+            className="text-primary border-primary hover:bg-primary hover:text-white"
             onClick={() => window.history.back()}
-            className="text-primary hover:bg-primary/10 service-nav-back bg-primary text-white hover:bg-primary/90"
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
             Bloglara Geri Dön
@@ -25,42 +25,42 @@ const BlogPost5 = () => {
       </div>
 
       {/* Article */}
-      <article className="py-8 lg:py-16 bg-white">
+      <article className="py-6 lg:py-8 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
+          {/* Featured Image */}
+          <div className="mb-6">
+            <img 
+              src="/lovable-uploads/c346c760-853a-4ab1-9bc7-5f3d4efccd0f.png"
+              alt="Musluk tamir ve değişim"
+              className="w-full h-48 md:h-64 lg:h-80 object-cover rounded-lg shadow-lg"
+            />
+          </div>
+
           {/* Header */}
-          <div className="mb-8">
-            <div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
-              <div className="flex items-center gap-1">
+          <div className="mb-6">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-sm text-gray-600 mb-4">
+              <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
                 <span>3 Ocak 2025</span>
               </div>
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-2">
                 <User className="h-4 w-4" />
                 <span>Kocaeli Uzman Tesisatçı</span>
               </div>
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />
                 <span>3 dk okuma</span>
               </div>
             </div>
             
-            <h1 className="text-3xl lg:text-4xl font-bold text-primary mb-4">
+            <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-primary mb-4 leading-tight">
               Musluk Tamiri mi Değişimi mi? Karar Verme Rehberi
             </h1>
             
-            <p className="text-xl text-gray-600 leading-relaxed">
+            <p className="text-lg text-gray-600 leading-relaxed mb-6">
               Damlayan musluğunuz için tamir mi yaptırmalı yoksa yeni bir musluk mu almalısınız? 
               Maliyet analizi ve uzun vadeli çözümler için rehber.
             </p>
-          </div>
-
-          {/* Featured Image */}
-          <div className="mb-8">
-            <img 
-              src="/lovable-uploads/c346c760-853a-4ab1-9bc7-5f3d4efccd0f.png"
-              alt="Musluk tamir ve değişim"
-              className="w-full h-64 lg:h-96 object-cover rounded-lg shadow-lg"
-            />
           </div>
 
           {/* Content */}
