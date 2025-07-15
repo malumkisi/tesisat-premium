@@ -64,15 +64,21 @@ const MobileHeader = () => {
             <nav className="flex flex-col gap-4">
               <a 
                 href="/" 
-                className={`text-gray-700 hover:text-primary transition-colors font-medium ${
-                  window.location.pathname === '/' ? 'text-primary bg-primary/10 px-3 py-2 rounded-lg' : ''
+                className={`text-gray-700 hover:text-primary transition-colors font-medium px-3 py-2 rounded-lg ${
+                  window.location.pathname === '/' ? 'text-white bg-primary shadow-md' : 'hover:bg-gray-50'
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 Ana Sayfa
               </a>
               
-              <div className="border-l-2 border-primary pl-4">
+              <div className={`border-l-2 border-primary pl-4 px-3 py-2 rounded-lg ${
+                window.location.pathname.includes('/su-kacagi') || window.location.pathname.includes('/tikaniklik') || 
+                window.location.pathname.includes('/petek') || window.location.pathname.includes('/musluk') || 
+                window.location.pathname.includes('/klozet') || window.location.pathname.includes('/batarya') || 
+                window.location.pathname.includes('/kombi') || window.location.pathname.includes('/acil') 
+                ? 'bg-primary/10' : ''
+              }`}>
                 <p className="text-sm font-medium text-primary mb-2">Hizmetlerimiz</p>
                 <div className="flex flex-col gap-2 text-sm">
                   <a href="/su-kacagi-tespiti" className="text-gray-600 hover:text-primary transition-colors" onClick={() => setIsMenuOpen(false)}>Su Kaçağı Tespiti</a>
@@ -88,8 +94,8 @@ const MobileHeader = () => {
               
               <a 
                 href="/blog" 
-                className={`text-gray-700 hover:text-primary transition-colors font-medium ${
-                  window.location.pathname === '/blog' ? 'text-primary bg-primary/10 px-3 py-2 rounded-lg' : ''
+                className={`text-gray-700 hover:text-primary transition-colors font-medium px-3 py-2 rounded-lg ${
+                  window.location.pathname.includes('/blog') ? 'text-white bg-primary shadow-md' : 'hover:bg-gray-50'
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -97,8 +103,8 @@ const MobileHeader = () => {
               </a>
               <a 
                 href="/galeri" 
-                className={`text-gray-700 hover:text-primary transition-colors font-medium ${
-                  window.location.pathname === '/galeri' ? 'text-primary bg-primary/10 px-3 py-2 rounded-lg' : ''
+                className={`text-gray-700 hover:text-primary transition-colors font-medium px-3 py-2 rounded-lg ${
+                  window.location.pathname === '/galeri' ? 'text-white bg-primary shadow-md' : 'hover:bg-gray-50'
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >

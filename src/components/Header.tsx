@@ -57,14 +57,20 @@ const Header = () => {
             <nav className="flex gap-2 lg:gap-6">
               <a 
                 href="/" 
-                className={`text-gray-700 hover:text-primary transition-colors font-medium text-sm lg:text-base ${
-                  window.location.pathname === '/' ? 'text-primary bg-primary/10 px-3 py-1 rounded-full' : ''
+                className={`text-gray-700 hover:text-primary transition-colors font-medium text-sm lg:text-base px-3 py-2 rounded-lg ${
+                  window.location.pathname === '/' ? 'text-white bg-primary shadow-md' : 'hover:bg-gray-50'
                 }`}
               >
                 Ana Sayfa
               </a>
               <div className="relative group">
-                <a href="/#hizmetler" className="flex items-center text-gray-700 hover:text-primary transition-colors font-medium text-sm lg:text-base"
+                <a href="/#hizmetler" className={`flex items-center text-gray-700 hover:text-primary transition-colors font-medium text-sm lg:text-base px-3 py-2 rounded-lg ${
+                  window.location.pathname.includes('/su-kacagi') || window.location.pathname.includes('/tikaniklik') || 
+                  window.location.pathname.includes('/petek') || window.location.pathname.includes('/musluk') || 
+                  window.location.pathname.includes('/klozet') || window.location.pathname.includes('/batarya') || 
+                  window.location.pathname.includes('/kombi') || window.location.pathname.includes('/acil') 
+                  ? 'text-white bg-primary shadow-md' : 'hover:bg-gray-50'
+                }`}
                    onClick={(e) => {
                      e.preventDefault();
                      if (window.location.pathname === '/') {
@@ -107,16 +113,16 @@ const Header = () => {
               </div>
               <a 
                 href="/blog" 
-                className={`text-gray-700 hover:text-primary transition-colors font-medium text-sm lg:text-base ${
-                  window.location.pathname === '/blog' ? 'text-primary bg-primary/10 px-3 py-1 rounded-full' : ''
+                className={`text-gray-700 hover:text-primary transition-colors font-medium text-sm lg:text-base px-3 py-2 rounded-lg ${
+                  window.location.pathname.includes('/blog') ? 'text-white bg-primary shadow-md' : 'hover:bg-gray-50'
                 }`}
               >
                 Blog
               </a>
               <a 
                 href="/galeri" 
-                className={`text-gray-700 hover:text-primary transition-colors font-medium text-sm lg:text-base ${
-                  window.location.pathname === '/galeri' ? 'text-primary bg-primary/10 px-3 py-1 rounded-full' : ''
+                className={`text-gray-700 hover:text-primary transition-colors font-medium text-sm lg:text-base px-3 py-2 rounded-lg ${
+                  window.location.pathname === '/galeri' ? 'text-white bg-primary shadow-md' : 'hover:bg-gray-50'
                 }`}
               >
                 Galeri

@@ -226,11 +226,11 @@ const BlogPost = () => {
       <MobileHeader />
       
       {/* Back Button - Responsive for all screens */}
-      <div className="pt-16 md:pt-4 bg-white sticky top-0 z-40 shadow-sm mx-0 my-0 px-0 py-0">
-        <div className="container mx-auto px-4 py-3">
+      <div className="bg-white sticky top-0 z-40 shadow-sm">
+        <div className="container mx-auto px-4 py-3 pt-20 md:pt-4">
           <Button variant="outline" className="text-primary border-primary hover:bg-primary hover:text-white" onClick={() => window.history.back()}>
             <ArrowLeft className="mr-2 h-4 w-4" />
-            Geri Dön
+            Bloglara Geri Dön
           </Button>
         </div>
       </div>

@@ -202,7 +202,15 @@ const Blog = () => {
                   variant="outline"
                   size="sm"
                   className="border-primary text-primary hover:bg-primary hover:text-white"
-                  onClick={() => window.location.href = '/blog2'}
+                  onClick={() => {
+                    const nextPageUrl = '/blog2';
+                    const link = document.createElement('a');
+                    link.href = nextPageUrl;
+                    link.style.display = 'none';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                  }}
                 >
                   2
                 </Button>
@@ -210,7 +218,15 @@ const Blog = () => {
               <Button 
                 variant="outline"
                 className="border-primary text-primary hover:bg-primary hover:text-white"
-                onClick={() => window.location.href = '/blog2'}
+                onClick={() => {
+                  const nextPageUrl = '/blog2';
+                  const link = document.createElement('a');
+                  link.href = nextPageUrl;
+                  link.style.display = 'none';
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }}
               >
                 Sonraki Sayfa
               </Button>
