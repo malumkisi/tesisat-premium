@@ -43,16 +43,16 @@ const AcilMudahale = () => {
               <Button 
                 size="lg" 
                 className="bg-white text-red-600 hover:bg-gray-100 font-bold text-lg px-6 sm:px-8 py-4 rounded-full w-full sm:w-auto"
-                onClick={() => window.open('tel:05321234567')}
+                onClick={() => window.open('tel:00000000000')}
               >
                 <Phone className="mr-2 h-5 w-5" />
-                <span className="text-center">ACİL ARAMA: 0532 123 45 67</span>
+                <span className="text-center">ACİL ARAMA: 0000 000 00 00</span>
               </Button>
               <Button 
                 size="lg" 
                 variant="outline"
                 className="border-white text-white hover:bg-white hover:text-red-600 font-bold text-lg px-6 sm:px-8 py-4 rounded-full w-full sm:w-auto"
-                onClick={() => window.open('https://wa.me/905321234567')}
+                onClick={() => window.open('https://wa.me/900000000000')}
               >
                 WhatsApp Acil Mesaj
               </Button>
@@ -159,7 +159,7 @@ const AcilMudahale = () => {
                   <span className="text-white font-bold text-xl">1</span>
                 </div>
                 <h4 className="font-semibold text-primary mb-2">Arama</h4>
-                <p className="text-gray-600 text-sm">0532 123 45 67 numarasını arayın</p>
+                <p className="text-gray-600 text-sm">0000 000 00 00 numarasını arayın</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -198,16 +198,16 @@ const AcilMudahale = () => {
             <Button 
               size="lg" 
               className="bg-white text-red-600 hover:bg-gray-100 font-bold text-xl px-12 py-6 rounded-full"
-              onClick={() => window.open('tel:05321234567')}
+              onClick={() => window.open('tel:00000000000')}
             >
               <Phone className="mr-2 h-6 w-6" />
-              0532 123 45 67
+              0000 000 00 00
             </Button>
             <Button 
               size="lg" 
               variant="outline"
               className="border-white text-white hover:bg-white hover:text-red-600 font-bold text-xl px-12 py-6 rounded-full"
-              onClick={() => window.open('https://wa.me/905321234567')}
+              onClick={() => window.open('https://wa.me/900000000000')}
             >
               WhatsApp
             </Button>

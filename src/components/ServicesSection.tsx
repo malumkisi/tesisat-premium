@@ -148,9 +148,9 @@ const ServicesSection = () => {
           <Button 
             size="lg" 
             className="bg-white text-orange-600 hover:bg-gray-100 font-bold px-8 py-3"
-            onClick={() => window.open('tel:05321234567')}
+            onClick={() => window.open('tel:00000000000')}
           >
-            Acil Arama: 0532 123 45 67
+            Acil Arama: 0000 000 00 00
           </Button>
         </div>
       </div>

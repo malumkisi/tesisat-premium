@@ -232,7 +232,7 @@ const Blog = () => {
             <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <input 
                 type="email" 
-                placeholder="E-mail adresiniz"
+                placeholder="xxx@xxxxx.com"
                 className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
               />
               <Button className="bg-primary hover:bg-primary/90 px-6 py-3">

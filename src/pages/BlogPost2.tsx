@@ -78,8 +78,8 @@ const BlogPost2 = () => {
           <div class="bg-yellow-50 p-6 rounded-lg mt-8">
             <h3 class="text-lg font-semibold text-yellow-800 mb-3">🚨 Profesyonel Destek İçin</h3>
             <p class="text-yellow-700 mb-3">Tıkanıklık sorununuzun doğru yöntemle çözülmesi için uzman tesisatçı desteği alın.</p>
-            <a href="tel:05321234567" class="inline-flex items-center bg-yellow-600 text-white px-4 py-2 rounded-lg hover:bg-yellow-700 transition-colors">
-              📞 0532 123 45 67 - Hemen Arayın
+             <a href="tel:00000000000" class="inline-flex items-center bg-yellow-600 text-white px-4 py-2 rounded-lg hover:bg-yellow-700 transition-colors">
+               📞 0000 000 00 00 - Hemen Arayın
             </a>
           </div>
         </div>
@@ -167,8 +167,8 @@ const BlogPost2 = () => {
           <div class="bg-orange-50 p-6 rounded-lg mt-8">
             <h3 class="text-lg font-semibold text-orange-800 mb-3">🔧 Profesyonel Kombi Bakımı</h3>
             <p class="text-orange-700 mb-3">Kombinizin uzun ömürlü ve verimli çalışması için düzenli bakım yaptırın.</p>
-            <a href="tel:05321234567" class="inline-flex items-center bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-700 transition-colors">
-              📞 0532 123 45 67 - Randevu Alın
+             <a href="tel:00000000000" class="inline-flex items-center bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-700 transition-colors">
+               📞 0000 000 00 00 - Randevu Alın
             </a>
           </div>
         </div>
@@ -287,8 +287,8 @@ const BlogPost2 = () => {
           <div class="bg-blue-50 p-6 rounded-lg mt-8">
             <h3 class="text-lg font-semibold text-blue-800 mb-3">🔧 Profesyonel Değerlendirme</h3>
             <p class="text-blue-700 mb-3">Musluğunuzun tamire değer olup olmadığını öğrenmek için uzman görüşü alın.</p>
-            <a href="tel:05321234567" class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
-              📞 0532 123 45 67 - Ücretsiz Keşif
+             <a href="tel:00000000000" class="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+               📞 0000 000 00 00 - Ücretsiz Keşif
             </a>
           </div>
         </div>
@@ -307,18 +307,22 @@ const BlogPost2 = () => {
       <Header />
       <MobileHeader />
       
-      <div className="pt-24 pb-16">
+      {/* Back Button */}
+      <div className="pt-20 md:pt-4 bg-primary">
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between mb-8">
-            <Button
-              variant="outline"
-              onClick={() => window.history.back()}
-              className="flex items-center gap-2 bg-white shadow-md hover:shadow-lg border-gray-300 hover:bg-gray-50"
-            >
-              <ArrowLeft className="h-4 w-4" />
-              Geri Dön
-            </Button>
-          </div>
+          <Button
+            variant="outline"
+            className="bg-white/10 text-white border-white/30 hover:bg-white hover:text-primary backdrop-blur-sm"
+            onClick={() => window.history.back()}
+          >
+            <ArrowLeft className="mr-2 h-4 w-4" />
+            Geri Dön
+          </Button>
+        </div>
+      </div>
+
+      <div className="py-8 lg:py-12">
+        <div className="container mx-auto px-4">
 
           <article className="max-w-4xl mx-auto">
             <div className="mb-8">
@@ -343,7 +347,7 @@ const BlogPost2 = () => {
                 </div>
               </div>
               
-              <h1 className="text-3xl md:text-4xl font-bold text-primary mb-6 font-poppins">
+              <h1 className="text-2xl md:text-3xl font-bold text-primary mb-4 font-poppins">
                 {post.title}
               </h1>
             </div>

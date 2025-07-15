@@ -195,9 +195,9 @@ const BlogPost4 = () => {
             <Button 
               size="lg" 
               className="bg-white text-primary hover:bg-gray-100 font-bold"
-              onClick={() => window.open('tel:05321234567')}
+              onClick={() => window.open('tel:00000000000')}
             >
-              Randevu Al: 0532 123 45 67
+              Randevu Al: 0000 000 00 00
             </Button>
           </div>
         </div>

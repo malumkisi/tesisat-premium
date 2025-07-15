@@ -20,7 +20,7 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-orange-400 flex-shrink-0" />
-                <a href="tel:05321234567" className="font-semibold hover:text-orange-400 transition-colors">0532 123 45 67</a>
+                <a href="tel:00000000000" className="font-semibold hover:text-orange-400 transition-colors">0000 000 00 00</a>
               </div>
               <div className="flex items-center gap-3">
                 <Clock className="h-5 w-5 text-orange-400 flex-shrink-0" />
@@ -74,7 +74,7 @@ const Footer = () => {
           <p className="mb-4">Su baskını, büyük kaçak veya acil tıkanıklık durumlarında</p>
           <div className="text-2xl font-bold">
             <Phone className="inline mr-2 h-6 w-6" />
-            0532 123 45 67
+            0000 000 00 00
           </div>
         </div>
 

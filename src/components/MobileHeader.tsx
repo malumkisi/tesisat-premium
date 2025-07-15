@@ -17,8 +17,8 @@ const MobileHeader = () => {
             </div>
             <div className="flex items-center gap-2">
               <Phone className="h-4 w-4" />
-              <a href="tel:05321234567" className="hover:text-accent transition-colors">
-                0532 123 45 67
+              <a href="tel:00000000000" className="hover:text-accent transition-colors">
+                0000 000 00 00
               </a>
             </div>
           </div>
@@ -41,7 +41,7 @@ const MobileHeader = () => {
             <Button 
               size="sm" 
               className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold"
-              onClick={() => window.open('tel:05321234567')}
+              onClick={() => window.open('tel:00000000000')}
             >
               <Phone className="mr-1 h-4 w-4" />
               ARA

@@ -158,9 +158,9 @@ const BlogPost3 = () => {
             <Button 
               size="lg" 
               className="bg-white text-primary hover:bg-gray-100 font-bold"
-              onClick={() => window.open('tel:05321234567')}
+              onClick={() => window.open('tel:00000000000')}
             >
-              Hemen Ara: 0532 123 45 67
+              Hemen Ara: 0000 000 00 00
             </Button>
           </div>
         </div>

@@ -42,10 +42,10 @@ const SuKacagiTespiti = () => {
             <Button 
               size="lg" 
               className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-lg px-6 sm:px-8 py-4 rounded-full w-full sm:w-auto"
-              onClick={() => window.open('tel:05321234567')}
+              onClick={() => window.open('tel:00000000000')}
             >
               <Phone className="mr-2 h-5 w-5" />
-              <span className="text-center">Hemen Arayın: 0532 123 45 67</span>
+              <span className="text-center">Hemen Arayın: 0000 000 00 00</span>
             </Button>
           </div>
         </div>
@@ -171,10 +171,10 @@ const SuKacagiTespiti = () => {
           <Button 
             size="lg" 
             className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold text-lg px-8 py-4 rounded-full"
-            onClick={() => window.open('tel:05321234567')}
+            onClick={() => window.open('tel:00000000000')}
           >
             <Phone className="mr-2 h-5 w-5" />
-            0532 123 45 67
+            0000 000 00 00
           </Button>
         </div>
       </section>

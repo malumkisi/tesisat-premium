@@ -37,7 +37,7 @@ Telefon: ${formData.phone}
 Hizmet: ${formData.service}
 Mesaj: ${formData.message || "Tesisat konusunda yardım almak istiyorum."}`;
     
-    const whatsappUrl = `https://wa.me/905321234567?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/900000000000?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
     
     toast({
@@ -72,11 +72,11 @@ Mesaj: ${formData.message || "Tesisat konusunda yardım almak istiyorum."}`;
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-center">
-                <div className="text-2xl lg:text-3xl font-bold mb-4">0532 123 45 67</div>
+                <div className="text-2xl lg:text-3xl font-bold mb-4">0000 000 00 00</div>
                 <Button 
                   size="lg" 
                   className="bg-white text-orange-600 hover:bg-gray-100 font-bold w-full"
-                  onClick={() => window.open('tel:05321234567')}
+                  onClick={() => window.open('tel:00000000000')}
                 >
                   <Phone className="mr-2 h-5 lg:h-6 w-5 lg:w-6" />
                   HEMEN ARA
@@ -97,7 +97,7 @@ Mesaj: ${formData.message || "Tesisat konusunda yardım almak istiyorum."}`;
                         variant="outline" 
                         size="sm"
                         className="mt-2 border-white text-white hover:bg-white hover:text-primary bg-white/10"
-                        onClick={() => window.open('https://wa.me/905321234567')}
+                        onClick={() => window.open('https://wa.me/900000000000')}
                       >
                         WhatsApp'ta Yaz
                       </Button>
@@ -248,10 +248,10 @@ Mesaj: ${formData.message || "Tesisat konusunda yardım almak istiyorum."}`;
           <Button 
             size="lg" 
             className="bg-white text-orange-600 hover:bg-gray-100 font-bold px-12 py-4 text-xl transition-colors duration-300"
-            onClick={() => window.open('tel:05321234567')}
+            onClick={() => window.open('tel:00000000000')}
           >
             <Phone className="mr-3 h-6 w-6" />
-            0532 123 45 67
+            0000 000 00 00
           </Button>
         </div>
       </div>

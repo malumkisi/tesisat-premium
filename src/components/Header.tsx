@@ -26,15 +26,15 @@ const Header = () => {
               </div>
               <div className="flex md:hidden lg:hidden items-center gap-2 font-medium">
                 <Phone className="h-4 w-4" />
-                <a href="tel:05321234567" className="hover:text-accent transition-colors text-xs lg:text-sm">
-                  0532 123 45 67
+                <a href="tel:00000000000" className="hover:text-accent transition-colors text-xs lg:text-sm">
+                  0000 000 00 00
                 </a>
               </div>
             </div>
             <div className="hidden md:flex lg:flex items-center gap-2 font-medium">
               <Phone className="h-4 w-4" />
-              <a href="tel:05321234567" className="hover:text-accent transition-colors text-xs lg:text-sm">
-                0532 123 45 67
+              <a href="tel:00000000000" className="hover:text-accent transition-colors text-xs lg:text-sm">
+                0000 000 00 00
               </a>
             </div>
           </div>
@@ -154,7 +154,7 @@ const Header = () => {
             <Button 
               size="lg" 
               className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-4 lg:px-6 py-2 lg:py-3 rounded-full text-sm lg:text-base"
-              onClick={() => window.open('tel:05321234567')}
+              onClick={() => window.open('tel:00000000000')}
             >
               <Phone className="mr-1 lg:mr-2 h-4 w-4" />
               <span className="hidden lg:inline">Hemen</span> Ara

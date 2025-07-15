@@ -22,23 +22,91 @@ const BlogPost = () => {
         <div class="prose max-w-none">
           <p class="lead">Su kaçağı belirtilerini erken fark ederek büyük hasarları önleyebilirsiniz. İşte dikkat etmeniz gereken 5 önemli işaret ve bu durumlarla karşılaştığınızda ne yapmanız gerektiği hakkında detaylı bilgiler...</p>
           
-          <h2>1. Duvar ve Tavanda Nem Lekeler</h2>
+          <h2>1. Duvar ve Tavanda Nem Lekeleri</h2>
           <p>Su kaçağının en belirgin işaretlerinden biri duvar ve tavanlarda görülen nem lekeleridir. Bu lekeler genellikle sarımsı veya kahverengi renkte olur ve zamanla büyür.</p>
+          
+          <div class="bg-gray-50 p-4 rounded-lg my-4">
+            <h3 class="font-semibold mb-2">🔍 Dikkat Edilmesi Gerekenler:</h3>
+            <ul class="list-disc pl-6">
+              <li>Lekeler özellikle banyo ve mutfak duvarlarında görülür</li>
+              <li>Başlangıçta küçük noktalar halinde belirler</li>
+              <li>Zamanla büyüyerek büyük alanları kaplar</li>
+              <li>Dokunulduğında yumuşak ve nemli hissedilir</li>
+            </ul>
+          </div>
           
           <h2>2. Su Faturasında Anormal Artış</h2>
           <p>Kullanım alışkanlıklarınızda değişiklik olmadığı halde su faturanızda %20'den fazla artış varsa, gizli bir su kaçağı olabilir.</p>
           
+          <p>Normal kullanım miktarınızı belirlemek için son 6 ayın faturalarını karşılaştırın. Mevsimsel değişiklikler dikkate alındığında bile anormal bir artış varsa, bu ciddi bir uyarı işaretidir.</p>
+          
           <h2>3. Sürekli Su Sesi Duyma</h2>
           <p>Evde hiç musluk açık değilken bile su akma sesi duyuyorsanız, bu durum ciddi bir su kaçağı işareti olabilir.</p>
+          
+          <p>Bu sesler genellikle:</p>
+          <ul class="list-disc pl-6 my-4">
+            <li>Duvar içinden gelen hafif hışırtı sesleri</li>
+            <li>Gece sessizlikte duyulan damla sesleri</li>
+            <li>Sürekli akan su sesi</li>
+            <li>Borularda titreşim kaynaklı sesler olabilir</li>
+          </ul>
           
           <h2>4. Zemin ve Duvarlarda Çatlaklar</h2>
           <p>Su kaçağı nedeniyle zemin ve duvarlarda oluşan çatlaklar, sorunun ilerlemiş aşamada olduğunu gösterir.</p>
           
+          <p>Özellikle:</p>
+          <ul class="list-disc pl-6 my-4">
+            <li>Banyo ve mutfak zeminlerinde çatlaklar</li>
+            <li>Duvar köşelerinde oluşan çizgiler</li>
+            <li>Fayans aralarında açılan boşluklar</li>
+            <li>Laminat parkede kabarma ve çatlaklar</li>
+          </ul>
+          
           <h2>5. Kötü Koku ve Küf Oluşumu</h2>
           <p>Sürekli nem nedeniyle oluşan küf ve kötü kokular da su kaçağının belirtileri arasındadır.</p>
           
+          <p>Küf oluşumu sağlık için ciddi risklere yol açabilir. Özellikle:</p>
+          <ul class="list-disc pl-6 my-4">
+            <li>Solunum yolu problemleri</li>
+            <li>Alerjik reaksiyonlar</li>
+            <li>Cilt irritasyonları</li>
+            <li>Astım ve kronik öksürük</li>
+          </ul>
+          
+          <h2>Su Kaçağı Nasıl Test Edilir?</h2>
+          <p>Evde basit bir test yapabilirsiniz:</p>
+          <ol class="list-decimal pl-6 my-4">
+            <li>Evdeki tüm muslukları kapatın</li>
+            <li>Su sayacınızı kontrol edin</li>
+            <li>2 saat boyunca su kullanmayın</li>
+            <li>Sayacı tekrar kontrol edin</li>
+            <li>Değer değişmişse kaçak var demektir</li>
+          </ol>
+          
           <h2>Ne Yapmalısınız?</h2>
           <p>Bu belirtilerden herhangi birini fark ettiğinizde hemen profesyonel yardım almalısınız. Kocaeli Uzman Tesisatçı olarak, kırmadan su kaçağı tespiti hizmeti sunuyoruz.</p>
+          
+          <div class="bg-red-50 p-6 rounded-lg my-6">
+            <h3 class="text-lg font-bold text-red-900 mb-3">⚠️ Acil Durum İşaretleri</h3>
+            <p class="text-red-800 mb-3">Aşağıdaki durumlardan biri varsa derhal arayın:</p>
+            <ul class="list-disc pl-6 text-red-700">
+              <li>Duvardan aktif su sızıntısı</li>
+              <li>Tavanda büyük su lekesi</li>
+              <li>Zeminde su birikintisi</li>
+              <li>Elektrik prizlerine yakın nem</li>
+              <li>Su sayacının sürekli dönmesi</li>
+            </ul>
+          </div>
+          
+          <h2>Profesyonel Tespit Hizmetimiz</h2>
+          <p>Modern cihazlarla kırmadan tespit ediyoruz:</p>
+          <ul class="list-disc pl-6 my-4">
+            <li>Termal kamera ile duvar içi görüntüleme</li>
+            <li>Ultrasonik ses cihazları</li>
+            <li>Nem ölçüm teknolojisi</li>
+            <li>Gaz dedektörü ile hassas tespit</li>
+            <li>Endoskopik kamera inceleme</li>
+          </ul>
           
           <div class="bg-blue-50 p-6 rounded-lg my-8">
             <h3 class="text-lg font-bold text-blue-900 mb-3">💡 Uzman Tavsiyesi</h3>
@@ -162,20 +230,25 @@ const BlogPost = () => {
       <Header />
       <MobileHeader />
       
-      {/* Hero Section */}
-      <section className="bg-primary text-white py-12 lg:py-16">
+      {/* Back Button */}
+      <div className="pt-20 md:pt-4 bg-primary">
         <div className="container mx-auto px-4">
           <Button
             variant="outline"
-            className="bg-white/10 text-white border-white/30 hover:bg-white hover:text-primary mb-6 backdrop-blur-sm"
+            className="bg-white/10 text-white border-white/30 hover:bg-white hover:text-primary backdrop-blur-sm"
             onClick={() => window.history.back()}
           >
             <ArrowLeft className="mr-2 h-4 w-4" />
             Geri Dön
           </Button>
-          
+        </div>
+      </div>
+
+      {/* Hero Section */}
+      <section className="bg-primary text-white py-8 lg:py-12">
+        <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="flex flex-wrap items-center gap-4 text-white/80 mb-6">
+            <div className="flex flex-wrap items-center gap-4 text-white/80 mb-4">
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
                 <span>{post.date}</span>
@@ -190,7 +263,7 @@ const BlogPost = () => {
               </div>
             </div>
             
-            <h1 className="text-3xl lg:text-4xl font-bold mb-6 leading-tight">
+            <h1 className="text-2xl lg:text-3xl font-bold leading-tight">
               {post.title}
             </h1>
           </div>
@@ -226,16 +299,16 @@ const BlogPost = () => {
                 <Button 
                   size="lg"
                   className="bg-accent hover:bg-accent/90 text-accent-foreground"
-                  onClick={() => window.open('tel:05321234567')}
+                  onClick={() => window.open('tel:00000000000')}
                 >
                   <Phone className="mr-2 h-5 w-5" />
-                  Hemen Ara: 0532 123 45 67
+                  Hemen Ara: 0000 000 00 00
                 </Button>
                 <Button 
                   size="lg"
                   variant="outline"
                   className="border-white text-white hover:bg-white hover:text-primary"
-                  onClick={() => window.open('https://wa.me/905321234567')}
+                  onClick={() => window.open('https://wa.me/900000000000')}
                 >
                   WhatsApp ile Yaz
                 </Button>
