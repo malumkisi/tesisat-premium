@@ -12,7 +12,7 @@ const AcilMudahale = () => {
       <MobileHeader />
       
       {/* Back Button */}
-      <div className="pt-16 md:pt-4 bg-red-600">
+      <div className="pt-4 bg-red-600">
         <div className="container mx-auto px-4">
           <Button
             variant="outline"

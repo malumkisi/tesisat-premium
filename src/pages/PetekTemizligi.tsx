@@ -10,7 +10,7 @@ const PetekTemizligi = () => {
       <MobileHeader />
       
       {/* Back Button */}
-      <div className="pt-16 md:pt-4 bg-primary py-[16px]">
+      <div className="pt-4 bg-primary">
         <div className="container mx-auto px-4">
           <Button variant="outline" onClick={() => window.location.href = '/#hizmetler'} className="flex items-center gap-2 bg-white shadow-sm hover:shadow-md border-gray-300">
             <ArrowLeft className="h-4 w-4" />
