@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import MobileHeader from "@/components/MobileHeader";
 import Footer from "@/components/Footer";
+import { Link } from "react-router-dom";
 
 const AcilMudahale = () => {
   return (
@@ -14,14 +15,15 @@ const AcilMudahale = () => {
       {/* Back Button */}
       <div className="pt-4 bg-red-600">
         <div className="container mx-auto px-4">
-          <Button
-            variant="outline"
-            onClick={() => window.location.href = '/#hizmetler'}
-            className="flex items-center gap-2 bg-white shadow-sm hover:shadow-md border-gray-300"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            Hizmetlerimize Geri Dön
-          </Button>
+          <Link to="/#hizmetler">
+            <Button
+              variant="outline"
+              className="flex items-center gap-2 bg-white shadow-sm hover:shadow-md border-gray-300"
+            >
+              <ArrowLeft className="h-4 w-4" />
+              Hizmetlerimize Geri Dön
+            </Button>
+          </Link>
         </div>
       </div>
       
@@ -50,11 +52,10 @@ const AcilMudahale = () => {
               </Button>
               <Button 
                 size="lg" 
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-red-600 font-bold text-lg px-6 sm:px-8 py-4 rounded-full w-full sm:w-auto"
+                className="bg-green-500 text-white hover:bg-green-600 font-bold text-lg px-6 sm:px-8 py-4 rounded-full w-full sm:w-auto shadow-lg"
                 onClick={() => window.open('https://wa.me/900000000000')}
               >
-                WhatsApp Acil Mesaj
+                📱 WhatsApp Acil Mesaj
               </Button>
             </div>
           </div>
@@ -205,11 +206,10 @@ const AcilMudahale = () => {
             </Button>
             <Button 
               size="lg" 
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-red-600 font-bold text-xl px-12 py-6 rounded-full"
+              className="bg-green-500 text-white hover:bg-green-600 font-bold text-xl px-12 py-6 rounded-full shadow-lg"
               onClick={() => window.open('https://wa.me/900000000000')}
             >
-              WhatsApp
+              📱 WhatsApp
             </Button>
           </div>
         </div>
