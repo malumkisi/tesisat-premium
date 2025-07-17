@@ -52,11 +52,10 @@ const AcilMudahale = () => {
               </Button>
               <Button 
                 size="lg" 
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-red-600 font-bold text-lg px-6 sm:px-8 py-4 rounded-full w-full sm:w-auto !opacity-100"
+                className="bg-white text-red-600 hover:bg-gray-100 font-bold text-lg px-6 sm:px-8 py-4 rounded-full w-full sm:w-auto"
                 onClick={() => window.open('https://wa.me/900000000000')}
               >
-                📱 WhatsApp Acil Mesaj
+                WhatsApp Acil Mesaj
               </Button>
             </div>
           </div>
@@ -207,11 +206,10 @@ const AcilMudahale = () => {
             </Button>
             <Button 
               size="lg" 
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-red-600 font-bold text-xl px-12 py-6 rounded-full !opacity-100"
+              className="bg-white text-red-600 hover:bg-gray-100 font-bold text-xl px-12 py-6 rounded-full"
               onClick={() => window.open('https://wa.me/900000000000')}
             >
-              📱 WhatsApp
+              WhatsApp
             </Button>
           </div>
         </div>
