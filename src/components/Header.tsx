@@ -49,7 +49,7 @@ const Header = () => {
               <Wrench className="h-5 w-5 lg:h-6 lg:w-6 text-white" />
             </div>
             <h1 className="text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold text-primary font-poppins">
-              Kocaeli Uzman Tesisatçı
+              AFS Web Hizmetleri
             </h1>
           </a>
           

@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="sm:col-span-2 lg:col-span-2">
             <h3 className="text-2xl font-bold mb-4 text-orange-400">
-              Kocaeli Uzman Tesisat
+              AFS Web Hizmetleri
             </h3>
             <p className="text-gray-300 mb-4 leading-relaxed">
               Kocaeli'de 7/24 acil tesisat hizmeti veren uzman ekibimizle, su kaçağı tespiti, 
@@ -82,7 +82,7 @@ const Footer = () => {
         <div className="mt-8 pt-8 border-t border-gray-700">
           <div className="text-center">
             <p className="text-gray-400 text-sm mb-2">
-              © {currentYear} Kocaeli Uzman Tesisat. Tüm hakları saklıdır.
+              © {currentYear} AFS Web Hizmetleri. Tüm hakları saklıdır.
             </p>
             <p className="text-gray-500 text-xs">
               Bu site tamamen kurgusaldır ve demo amaçlıdır. • AFS Web Hizmetleri tarafından geliştirilmiştir.
