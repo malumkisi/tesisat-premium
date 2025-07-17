@@ -2,6 +2,7 @@
 import { Droplets, Wrench, Thermometer, Settings } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const ServicesSection = () => {
   const services = [
@@ -83,8 +84,8 @@ const ServicesSection = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-8 mb-12">
           {services.map((service, index) => (
-                <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-l-4 border-l-accent cursor-pointer"
-                      onClick={() => window.location.href = service.link}>
+            <Link key={index} to={service.link}>
+                <Card className="group hover:shadow-xl transition-all duration-300 border-l-4 border-l-accent cursor-pointer h-full">
               <CardContent className="p-6 lg:p-8">
                 <div className="flex flex-col sm:flex-row items-start gap-4 lg:gap-6">
                   <div className="flex-shrink-0">
@@ -119,10 +120,6 @@ const ServicesSection = () => {
                       variant="outline" 
                       size="sm"
                       className="border-primary text-primary hover:bg-primary hover:text-white"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        window.location.href = service.link;
-                      }}
                     >
                       Detaylı Bilgi
                     </Button>
@@ -130,6 +127,7 @@ const ServicesSection = () => {
                 </div>
               </CardContent>
             </Card>
+            </Link>
           ))}
         </div>
 
@@ -143,15 +141,24 @@ const ServicesSection = () => {
 
         {/* Emergency CTA */}
         <div className="mt-16 text-center bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl p-8 text-white">
-          <h3 className="text-2xl font-bold mb-4">Acil Durum mu?</h3>
-          <p className="text-lg mb-6 opacity-90">7/24 hizmetimizle her an yanınızdayız</p>
-          <Button 
-            size="lg" 
-            className="bg-white text-orange-600 hover:bg-gray-100 font-bold px-8 py-3"
-            onClick={() => window.open('tel:00000000000')}
-          >
-            Acil Arama: 0000 000 00 00
-          </Button>
+          <h3 className="text-2xl lg:text-3xl font-bold mb-4 text-white">ACİL DURUMDA HEMEN ARAYIN!</h3>
+          <p className="text-lg lg:text-xl mb-6 text-white font-medium">7/24 Hizmet - 30 Dakika İçinde Adresinizde</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button 
+              size="lg" 
+              className="bg-white text-orange-600 hover:bg-gray-100 font-bold px-8 py-4 text-lg w-full sm:w-auto"
+              onClick={() => window.open('tel:00000000000')}
+            >
+              📞 ACİL ARAMA: 0000 000 00 00
+            </Button>
+            <Button 
+              size="lg" 
+              className="bg-green-500 text-white hover:bg-green-600 font-bold px-8 py-4 text-lg w-full sm:w-auto"
+              onClick={() => window.open('https://wa.me/905555555555')}
+            >
+              📱 WhatsApp Acil Mesaj
+            </Button>
+          </div>
         </div>
       </div>
     </section>
