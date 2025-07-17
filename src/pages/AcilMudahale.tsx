@@ -1,4 +1,4 @@
-import { Phone, Clock, CheckCircle, Shield, Wrench, AlertTriangle, ArrowLeft } from "lucide-react";
+import { Phone, Clock, CheckCircle, Shield, Wrench, AlertTriangle, ArrowLeft, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
@@ -55,6 +55,7 @@ const AcilMudahale = () => {
                 className="bg-white text-red-600 hover:bg-gray-100 font-bold text-lg px-6 sm:px-8 py-4 rounded-full w-full sm:w-auto"
                 onClick={() => window.open('https://wa.me/900000000000')}
               >
+                <MessageCircle className="mr-2 h-5 w-5" />
                 WhatsApp Acil Mesaj
               </Button>
             </div>
@@ -209,6 +210,7 @@ const AcilMudahale = () => {
               className="bg-white text-red-600 hover:bg-gray-100 font-bold text-xl px-12 py-6 rounded-full"
               onClick={() => window.open('https://wa.me/900000000000')}
             >
+              <MessageCircle className="mr-2 h-6 w-6" />
               WhatsApp
             </Button>
           </div>
