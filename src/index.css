@@ -234,15 +234,12 @@ img {
   }
 }
 
-/* Ensure WhatsApp buttons are always visible */
-.bg-green-500 {
-  background-color: rgb(34 197 94) !important;
-  color: white !important;
+/* Ensure buttons are always visible */
+.border-white {
   opacity: 1 !important;
   visibility: visible !important;
 }
 
 .text-white {
-  color: white !important;
   opacity: 1 !important;
 }
