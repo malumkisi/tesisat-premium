@@ -215,31 +215,5 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
     overflow-x: hidden;
-    scroll-behavior: smooth;
   }
-}
-
-/* Performance optimizations */
-img {
-  content-visibility: auto;
-  contain-intrinsic-size: 300px;
-}
-
-/* Optimize animations for better performance */
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-}
-
-/* Ensure buttons are always visible */
-.border-white {
-  opacity: 1 !important;
-  visibility: visible !important;
-}
-
-.text-white {
-  opacity: 1 !important;
 }
