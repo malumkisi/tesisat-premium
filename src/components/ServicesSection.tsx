@@ -153,10 +153,10 @@ const ServicesSection = () => {
             </Button>
             <Button 
               size="lg" 
-              className="bg-green-500 text-white hover:bg-green-600 font-bold px-8 py-4 text-lg w-full sm:w-auto border-0"
+              className="bg-white text-orange-600 hover:bg-gray-100 font-bold px-8 py-4 text-lg w-full sm:w-auto"
               onClick={() => window.open('https://wa.me/905555555555')}
             >
-              📱 WhatsApp Acil Mesaj
+              WhatsApp Acil Mesaj
             </Button>
           </div>
         </div>
