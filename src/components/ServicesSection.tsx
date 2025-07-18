@@ -1,5 +1,5 @@
 
-import { Droplets, Wrench, Thermometer, Settings, MessageCircle } from "lucide-react";
+import { Droplets, Wrench, Thermometer, Settings } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -153,11 +153,10 @@ const ServicesSection = () => {
             </Button>
             <Button 
               size="lg" 
-              className="bg-white text-orange-600 hover:bg-gray-100 font-bold px-8 py-4 text-lg w-full sm:w-auto"
+              className="bg-green-500 text-white hover:bg-green-600 font-bold px-8 py-4 text-lg w-full sm:w-auto"
               onClick={() => window.open('https://wa.me/905555555555')}
             >
-              <MessageCircle className="mr-2 h-5 w-5" />
-              <span className="text-center">WhatsApp Acil Mesaj</span>
+              📱 WhatsApp Acil Mesaj
             </Button>
           </div>
         </div>
