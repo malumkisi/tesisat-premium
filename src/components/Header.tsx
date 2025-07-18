@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <header className="hidden md:block bg-white shadow-lg sticky top-0 z-50">
       {/* Top Bar */}
-      <div className="bg-primary text-white py-2">
+      <div className="bg-primary text-white py-1 md:py-2">
         <div className="container mx-auto px-2 md:px-4">
           <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-2 text-sm">
             <div className="flex flex-col md:flex-row items-center gap-2 lg:gap-4">
