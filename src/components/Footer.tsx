@@ -14,7 +14,7 @@ const Footer = () => {
               AFS Web Hizmetleri
             </h3>
             <p className="text-gray-300 mb-4 leading-relaxed">
-              Kocaeli'de 7/24 acil tesisat hizmeti veren uzman ekibimizle, su kaçağı tespiti, 
+              İstanbul'da 7/24 acil tesisat hizmeti veren uzman ekibimizle, su kaçağı tespiti, 
               tıkanıklık açma, petek temizliği ve tüm tesisat sorunlarınıza hızlı çözüm sunuyoruz.
             </p>
             <div className="space-y-2">
@@ -28,7 +28,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="h-5 w-5 text-orange-400 flex-shrink-0" />
-                <span>Kocaeli Geneli</span>
+                <span>İstanbul Geneli</span>
               </div>
             </div>
           </div>
@@ -52,18 +52,18 @@ const Footer = () => {
           <div className="sm:col-span-1">
             <h4 className="text-lg font-bold mb-4 text-orange-400">Hizmet Bölgeleri</h4>
             <ul className="space-y-2 text-gray-300 text-sm">
-              <li>• İzmit</li>
-              <li>• Gebze</li>
-              <li>• Darıca</li>
-              <li>• Körfez</li>
-              <li>• Gölcük</li>
-              <li>• Derince</li>
-              <li>• Çayırova</li>
-              <li>• Kartepe</li>
-              <li>• Başiskele</li>
-              <li>• Karamürsel</li>
-              <li>• Kandıra</li>
-              <li>• Dilovası</li>
+              <li>• Fatih</li>
+              <li>• Beyoğlu</li>
+              <li>• Beşiktaş</li>
+              <li>• Şişli</li>
+              <li>• Kadıköy</li>
+              <li>• Üsküdar</li>
+              <li>• Bakırköy</li>
+              <li>• Zeytinburnu</li>
+              <li>• Pendik</li>
+              <li>• Maltepe</li>
+              <li>• Ataşehir</li>
+              <li>• Bahçelievler</li>
             </ul>
           </div>
         </div>

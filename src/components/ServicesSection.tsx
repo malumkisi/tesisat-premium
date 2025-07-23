@@ -9,7 +9,7 @@ const ServicesSection = () => {
     {
       icon: Droplets,
       title: "Cihazla Su Kaçağı Tespiti",
-      description: "İzmit, Gebze ve tüm Kocaeli'de evinizi şantiyeye çevirmeden, termal kamera ve dinleme cihazlarıyla su kaçağını noktasal olarak buluyoruz.",
+      description: "Fatih, Beyoğlu ve tüm İstanbul'da evinizi şantiyeye çevirmeden, termal kamera ve dinleme cihazlarıyla su kaçağını noktasal olarak buluyoruz.",
       features: ["Kırmadan tespit", "Termal kamera", "Garantili sonuç"],
       link: "/su-kacagi-tespiti"
     },
@@ -74,10 +74,10 @@ const ServicesSection = () => {
             <div className="w-12 h-px bg-primary ml-3"></div>
           </div>
           <h2 className="text-4xl font-bold text-primary mb-4 font-poppins">
-            Kocaeli Uzman Tesisatçı Hizmetlerimiz
+            İstanbul Uzman Tesisatçı Hizmetlerimiz
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto">
-            Kocaeli Uzman Tesisatçı hizmetlerinde tam anlamı ile müşteri odaklı çalışıyoruz. 
+            İstanbul Uzman Tesisatçı hizmetlerinde tam anlamı ile müşteri odaklı çalışıyoruz. 
             Su ve Sıhhi Tesisat işlemlerinizin her anını başından sonuna kadar büyük bir titizlikle yürütüyor mağduriyetlerinizi ortadan kaldırıyoruz.
           </p>
         </div>

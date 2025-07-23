@@ -9,7 +9,7 @@ const BlogSection = () => {
       title: "Evde Su Kaçağı Nasıl Anlaşılır? 5 Kesin İşaret",
       excerpt: "Su kaçağı belirtilerini erken fark ederek büyük hasarları önleyebilirsiniz. İşte dikkat etmeniz gereken 5 önemli işaret...",
       date: "15 Ocak 2025",
-      author: "Kocaeli Uzman Tesisat",
+      author: "İstanbul Uzman Tesisat",
       readTime: "3 dk okuma",
       image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=250&fit=crop"
     },
@@ -18,16 +18,16 @@ const BlogSection = () => {
       title: "Kırmadan Su Kaçağı Tespiti Gerçekten Mümkün mü?",
       excerpt: "Modern teknoloji sayesinde artık evinizi kırmadan su kaçağı tespiti yapılabiliyor. İşte kullanılan cihazlar ve yöntemler...",
       date: "12 Ocak 2025",
-      author: "Kocaeli Uzman Tesisat",
+      author: "İstanbul Uzman Tesisat",
       readTime: "4 dk okuma",
       image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=250&fit=crop"
     },
     {
       id: 3,
-      title: "Kocaeli'de Petek Temizliği Fiyatları ve Nelere Dikkat Edilmeli?",
+      title: "İstanbul'da Petek Temizliği Fiyatları ve Nelere Dikkat Edilmeli?",
       excerpt: "Petek temizliği ile doğalgaz faturanızdan %30'a kadar tasarruf edebilirsiniz. İşte fiyatlar ve dikkat edilmesi gerekenler...",
       date: "10 Ocak 2025",
-      author: "Kocaeli Uzman Tesisat",
+      author: "İstanbul Uzman Tesisat",
       readTime: "5 dk okuma",
       image: "https://images.unsplash.com/photo-1558623143-ca2c4f95c9b6?w=400&h=250&fit=crop"
     }

@@ -22,7 +22,7 @@ const Header = () => {
               </div>
               <div className="flex items-center gap-1 lg:gap-2">
                 <MapPin className="h-4 w-4" />
-                <span className="text-xs lg:text-sm">Kocaeli Geneli Hizmet</span>
+                <span className="text-xs lg:text-sm">İstanbul Geneli Hizmet</span>
               </div>
               <div className="flex md:hidden lg:hidden items-center gap-2 font-medium">
                 <Phone className="h-4 w-4" />

@@ -19,13 +19,13 @@ const HeroSection = () => {
             </div>
             
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 font-poppins leading-tight">
-              Kocaeli Uzman Tesisatçı
+              İstanbul Uzman Tesisatçı
               <br />
               <span className="text-accent">Profesyonel Hizmet</span>
             </h1>
             
             <p className="text-lg sm:text-xl text-white/90 mb-8 leading-relaxed">
-              Kocaeli Uzman Tesisatçı olarak, uzman ekibimizle su tesisatı sorunlarınıza çözüm sunuyoruz. 
+              İstanbul Uzman Tesisatçı olarak, uzman ekibimizle su tesisatı sorunlarınıza çözüm sunuyoruz. 
               Teknolojik donanımımız ve deneyimimizle her zaman yanınızdayız. 
               <strong className="text-accent"> Hızlı, Güvenilir ve Profesyonel</strong> Su Tesisatı Hizmetleri için Doğru Adrestesiniz!
             </p>
@@ -49,7 +49,7 @@ const HeroSection = () => {
             <div className="relative z-10">
               <img 
                 src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&h=700&fit=crop&crop=faces"
-                alt="Kocaeli Uzman Tesisat profesyonel teknisyen"
+                alt="İstanbul Uzman Tesisat profesyonel teknisyen"
                 className="w-full h-auto object-cover rounded-2xl"
               />
             </div>
@@ -62,10 +62,10 @@ const HeroSection = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-primary text-lg mb-2">
-                    Kocaeli Uzman Tesisatçı
+                    İstanbul Uzman Tesisatçı
                   </h3>
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    Kocaeli Uzman Tesisatçı olarak hizmette sınır tanımıyor küçük ya da büyük iş gözetmiyor 
+                    İstanbul Uzman Tesisatçı olarak hizmette sınır tanımıyor küçük ya da büyük iş gözetmiyor 
                     tamamen müşteri çıkarlarını gözeterek en uygun koşullarla hizmet sunuyoruz.
                   </p>
                 </div>

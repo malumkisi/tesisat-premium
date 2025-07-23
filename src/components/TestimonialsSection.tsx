@@ -6,42 +6,42 @@ const TestimonialsSection = () => {
   const testimonials = [
     {
       name: "Ahmet Y.",
-      location: "İzmit",
+      location: "Fatih",
       rating: 5,
-      comment: "İzmit'teki evimin banyosundaki su kaçağını yarım saatte bulup tamir ettiler. Hiçbir fayans kırılmadı. Kocaeli Uzman Tesisat ekibine teşekkürler.",
+      comment: "Fatih'teki evimin banyosundaki su kaçağını yarım saatte bulup tamir ettiler. Hiçbir fayans kırılmadı. İstanbul Uzman Tesisat ekibine teşekkürler.",
       service: "Su Kaçağı Tespiti"
     },
     {
       name: "Fatma S.",
-      location: "Gebze",
+      location: "Beyoğlu",
       rating: 5,
-      comment: "Gebze'deki dükkanımın mutfak gideri tıkanmıştı. Aradıktan 25 dakika sonra gelip robotla açtılar. Çok temiz ve profesyonel çalıştılar.",
+      comment: "Beyoğlu'ndaki dükkanımın mutfak gideri tıkanmıştı. Aradıktan 25 dakika sonra gelip robotla açtılar. Çok temiz ve profesyonel çalıştılar.",
       service: "Tıkanıklık Açma"
     },
     {
       name: "Mehmet K.",
-      location: "Darıca",
+      location: "Beşiktaş",
       rating: 5,
       comment: "Petek temizliği için geldi ekip. Gerçekten %30 daha az doğalgaz harcadığımı fark ettim. Hem temiz çalıştılar hem de çok bilgiliydi.",
       service: "Petek Temizliği"
     },
     {
       name: "Ayşe D.",
-      location: "Körfez",
+      location: "Şişli",
       rating: 5,
       comment: "Gece yarısı musluk patladı, 20 dakikada geldiler. Hem hızlılar hem de çok makul fiyat verdiler. Kesinlikle tavsiye ederim.",
       service: "Acil Müdahale"
     },
     {
       name: "Ali R.",
-      location: "Gölcük",
+      location: "Kadıköy",
       rating: 5,
       comment: "Klozet arızası için çağırdık. Yedek parçaları yanlarında getirmişler, hemen değiştirip hallettiler. Çok memnun kaldık.",
       service: "Klozet Tamiri"
     },
     {
       name: "Zeynep T.",
-      location: "Derince",
+      location: "Üsküdar",
       rating: 5,
       comment: "Kombi servisi için aramıştım. Hem uygun fiyat hem de garantili iş yaptılar. Artık kış boyunca rahat rahat ısınıyoruz.",
       service: "Kombi Servisi"
@@ -53,7 +53,7 @@ const TestimonialsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-primary-800 mb-4 font-poppins">
-            Kocaeli'deki Müşterilerimiz Bizim İçin Ne Dedi?
+            İstanbul'daki Müşterilerimiz Bizim İçin Ne Dedi?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Binlerce mutlu müşterimizin deneyimlerini okuyun ve güvenle tercih edin.

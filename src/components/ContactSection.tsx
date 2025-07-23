@@ -125,7 +125,7 @@ Mesaj: ${formData.message || "Tesisat konusunda yardım almak istiyorum."}`;
                     <MapPin className="h-6 lg:h-8 w-6 lg:w-8 text-red-400 flex-shrink-0" />
                     <div className="min-w-0 flex-1">
                       <h3 className="font-bold text-base lg:text-lg">Hizmet Bölgesi</h3>
-                      <p className="opacity-80 text-sm lg:text-base">Kocaeli Geneli</p>
+                      <p className="opacity-80 text-sm lg:text-base">İstanbul Geneli</p>
                       <p className="text-xs lg:text-sm opacity-70">Tüm ilçelere 30 dk içinde varış</p>
                     </div>
                   </div>

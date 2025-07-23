@@ -5,18 +5,26 @@ import { Button } from "@/components/ui/button";
 
 const ServiceAreasSection = () => {
   const serviceAreas = [
-    { name: "İzmit", time: "15-25 dk" },
-    { name: "Gebze", time: "20-30 dk" },
-    { name: "Darıca", time: "25-35 dk" },
-    { name: "Körfez", time: "20-30 dk" },
-    { name: "Gölcük", time: "25-35 dk" },
-    { name: "Derince", time: "15-25 dk" },
-    { name: "Çayırova", time: "25-35 dk" },
-    { name: "Kartepe", time: "30-40 dk" },
-    { name: "Başiskele", time: "20-30 dk" },
-    { name: "Karamürsel", time: "35-45 dk" },
-    { name: "Kandıra", time: "45-60 dk" },
-    { name: "Dilovası", time: "25-35 dk" }
+    { name: "Fatih", time: "15-25 dk" },
+    { name: "Beyoğlu", time: "20-30 dk" },
+    { name: "Beşiktaş", time: "25-35 dk" },
+    { name: "Şişli", time: "20-30 dk" },
+    { name: "Kadıköy", time: "25-35 dk" },
+    { name: "Üsküdar", time: "15-25 dk" },
+    { name: "Bakırköy", time: "25-35 dk" },
+    { name: "Zeytinburnu", time: "30-40 dk" },
+    { name: "Pendik", time: "20-30 dk" },
+    { name: "Maltepe", time: "35-45 dk" },
+    { name: "Ataşehir", time: "45-60 dk" },
+    { name: "Bahçelievler", time: "25-35 dk" },
+    { name: "Avcılar", time: "30-40 dk" },
+    { name: "Küçükçekmece", time: "35-45 dk" },
+    { name: "Büyükçekmece", time: "40-50 dk" },
+    { name: "Beylikdüzü", time: "35-45 dk" },
+    { name: "Esenyurt", time: "40-50 dk" },
+    { name: "Sarıyer", time: "30-40 dk" },
+    { name: "Eyüpsultan", time: "25-35 dk" },
+    { name: "Kağıthane", time: "20-30 dk" }
   ];
 
   return (
@@ -24,10 +32,10 @@ const ServiceAreasSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-primary-800 mb-4 font-poppins">
-            Kocaeli'de Tüm Semtlere Hizmetimiz Vardır
+            İstanbul'da Tüm Semtlere Hizmetimiz Vardır
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Geniş servis ağımızla Kocaeli'nin her köşesine hızla ulaşıyor, 7/24 kesintisiz hizmet veriyoruz.
+            Geniş servis ağımızla İstanbul'un her köşesine hızla ulaşıyor, 7/24 kesintisiz hizmet veriyoruz.
           </p>
         </div>
 
@@ -37,7 +45,7 @@ const ServiceAreasSection = () => {
             <MapPin className="h-16 w-16 text-white" />
           </div>
           <h3 className="text-2xl font-bold text-primary-800 mb-4">
-            Kocaeli Geneli Hızlı Ulaşım
+            İstanbul Geneli Hızlı Ulaşım
           </h3>
         </div>
 
@@ -89,7 +97,7 @@ const ServiceAreasSection = () => {
         {/* Coverage Info */}
         <div className="mt-12 grid md:grid-cols-3 gap-8 text-center">
           <div className="p-6">
-            <div className="text-3xl font-bold text-orange-500 mb-2">12</div>
+            <div className="text-3xl font-bold text-orange-500 mb-2">20</div>
             <div className="text-gray-600">İlçe Kapsamı</div>
           </div>
           <div className="p-6">

@@ -6,8 +6,8 @@ const WhyChooseUsSection = () => {
   const features = [
     {
       icon: Clock,
-      title: "Kocaeli'nin Her Yerine 30 Dk Servis",
-      description: "Geniş servis ağımızla İzmit'ten Gebze'ye Kocaeli'nin tüm ilçelerine en geç 30 dakikada ulaşıyoruz.",
+      title: "İstanbul'un Her Yerine 30 Dk Servis",
+      description: "Geniş servis ağımızla Fatih'ten Kadıköy'e İstanbul'un tüm ilçelerine en geç 30 dakikada ulaşıyoruz.",
       color: "text-blue-600"
     },
     {
@@ -38,7 +38,7 @@ const WhyChooseUsSection = () => {
             Bizi Diğerlerinden Ayıran Özellikler
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Neden binlerce Kocaeli sakini tesisat sorunları için bizi tercih ediyor?
+            Neden binlerce İstanbul sakini tesisat sorunları için bizi tercih ediyor?
           </p>
         </div>
 
